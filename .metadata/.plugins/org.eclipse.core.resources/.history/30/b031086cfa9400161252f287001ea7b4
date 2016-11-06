@@ -1,0 +1,9 @@
+package com.stocker.rest;
+
+public class Stocks {
+
+	String StockId;
+	String StockName;
+	String StockExc;
+	
+}

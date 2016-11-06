@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package com.get;
+
+/**
+ * @author danjackson
+ *
+ */
+public class StockWorkerSONThread  implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		getYQLStockDetailJSON();
+	}
+
+}

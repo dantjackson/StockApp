@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package com.get;
+
+/**
+ * @author danjackson
+ *
+ */
+public class StockWorkerSONThread  implements Runnable {
+
+	ArrayList<String> symbols;
+	
+	@Override
+	public void run() {
+	    System.out.println(Thread.currentThread().getName()+" Start. Command = " + command);
+		getYQLStockDetailJSON();
+		System.out.println(Thread.currentThread().getName()+" End.");
+	}
+
+}

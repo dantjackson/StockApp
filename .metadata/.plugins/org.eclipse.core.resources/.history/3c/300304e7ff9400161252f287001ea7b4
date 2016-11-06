@@ -1,0 +1,42 @@
+package com.stocker.rest;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import com.stocker.rest.SqlMySQLConn;
+
+public class StocksLoad {
+	
+	public List<Stocks> findPollerData(String dataSelections) {
+
+		List<Stocks> list = new ArrayList<Stocks>();
+		Connection c = null;
+		
+		String StockEx, StockName, StockId
+		
+	    String[] parts = dataSelections.split("&");
+	    dataDate = parts[0];
+	    market = parts[1];
+	    firmName = parts[2];
+	    firmType = parts[3];
+	    firmId  = parts[4];	    
+	    	      
+		String sql = "SELECT * FROM table(fca_ds_rpt.pck_firm_product_viewer.gen_get_product('" + dataDate + "','" + firmName + "','" + firmType + "','" + market + "','"  + firmId + "'))";
+		
+		try {
+			c = SQLConnection.getConnection();
+			Statement s = c.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			while (rs.next()) {
+				list.add(processPoller(rs));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		} finally {
+			SQLConnection.close(c);
+		}
+		return list;
+	}	
+
+}

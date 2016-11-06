@@ -1,0 +1,536 @@
+package com.get;
+
+public class StockDetail {
+
+	String HoldingsGainPercent, StockSymbol, EBITDA;
+	Double PriceEPSEstimateNextYear, ChangeinPercent, EPSEstimateNextQuarter;
+	Double DaysValueChange, HoldingsValue, PriceBook, Commission, DividendShare;
+	Double PriceSales, PercebtChangeFromYearHigh, HighLimit, PreviousClose;
+	Double PERatioRealtime, YearHigh, AnnualizedGain, HoldingsGain, ChangePercentRealtime;
+	Double PriceEPSEstimateCurrentYear, BidRealtime, AverageDailyVolume, PercentChange;
+	Double ChangeFromYearHigh, FiftydayMovingAverage, AskRealtime, TwoHundreddayMovingAverage;
+	Double PercentChangeFromTwoHundreddayMovingAverage, PricePaid, Volume, PercentChangeFromYearLow;
+	Double DaysHigh, EPSEstimateNextYear, PercentChangeFromFiftydayMovingAverage;
+	Double Open, DaysLow, DividendYield, Ask, EPSEstimateCurrentYear, YearLow;
+	Double ChangeFromFiftydayMovingAverage, Bid, ShortRatio, Change;
+	Double ChangeFromTwoHundreddayMovingAverage;
+	Double EarningsShare, BookValue, ChangeFromYearLow, OneyrTargetPrice, PERatio;
+	Double PEGRatio, LastTradePriceOnly;
+	
+	
+	String ExDividendDate, Name, Currency, DividendPayDate, LastTradeDate;
+	String StockExchange, SharesOwned, LastTradeTime, OrderBookRealtime;
+	String MarketCapitalization, LastTradeRealtimeWithTime, DaysRange, TradeDate;
+	String TickerTrend, YearRange, HoldingsValueRealtime, Change_PercentChange;
+	
+	public String getHoldingsGainPercent() {
+		return HoldingsGainPercent;
+	}
+	public void setHoldingsGainPercent(String holdingsGainPercent) {
+		HoldingsGainPercent = holdingsGainPercent;
+	}
+	public String getStockSymbol() {
+		return StockSymbol;
+	}
+	public void setStockSymbol(String stockSymbol) {
+		StockSymbol = stockSymbol;
+	}
+	public String getEBITDA() {
+		return EBITDA;
+	}
+	public void setEBITDA(String eBITDA) {
+		EBITDA = eBITDA;
+	}
+	public Double getPriceEPSEstimateNextYear() {
+		return PriceEPSEstimateNextYear;
+	}
+	public void setPriceEPSEstimateNextYear(Double priceEPSEstimateNextYear) {
+		PriceEPSEstimateNextYear = priceEPSEstimateNextYear;
+	}
+	public Double getChangeinPercent() {
+		return ChangeinPercent;
+	}
+	public void setChangeinPercent(Double changeinPercent) {
+		ChangeinPercent = changeinPercent;
+	}
+	public Double getEPSEstimateNextQuarter() {
+		return EPSEstimateNextQuarter;
+	}
+	public void setEPSEstimateNextQuarter(Double ePSEstimateNextQuarter) {
+		EPSEstimateNextQuarter = ePSEstimateNextQuarter;
+	}
+	public Double getDaysValueChange() {
+		return DaysValueChange;
+	}
+	public void setDaysValueChange(Double daysValueChange) {
+		DaysValueChange = daysValueChange;
+	}
+	public Double getHoldingsValue() {
+		return HoldingsValue;
+	}
+	public void setHoldingsValue(Double holdingsValue) {
+		HoldingsValue = holdingsValue;
+	}
+	public Double getPriceBook() {
+		return PriceBook;
+	}
+	public void setPriceBook(Double priceBook) {
+		PriceBook = priceBook;
+	}
+	public Double getCommission() {
+		return Commission;
+	}
+	public void setCommission(Double commission) {
+		Commission = commission;
+	}
+	public Double getDividendShare() {
+		return DividendShare;
+	}
+	public void setDividendShare(Double dividendShare) {
+		DividendShare = dividendShare;
+	}
+	public Double getPriceSales() {
+		return PriceSales;
+	}
+	public void setPriceSales(Double priceSales) {
+		PriceSales = priceSales;
+	}
+	public Double getPercebtChangeFromYearHigh() {
+		return PercebtChangeFromYearHigh;
+	}
+	public void setPercebtChangeFromYearHigh(Double percebtChangeFromYearHigh) {
+		PercebtChangeFromYearHigh = percebtChangeFromYearHigh;
+	}
+	public Double getHighLimit() {
+		return HighLimit;
+	}
+	public void setHighLimit(Double highLimit) {
+		HighLimit = highLimit;
+	}
+	public Double getPreviousClose() {
+		return PreviousClose;
+	}
+	public void setPreviousClose(Double previousClose) {
+		PreviousClose = previousClose;
+	}
+	public Double getPERatioRealtime() {
+		return PERatioRealtime;
+	}
+	public void setPERatioRealtime(Double pERatioRealtime) {
+		PERatioRealtime = pERatioRealtime;
+	}
+	public Double getYearHigh() {
+		return YearHigh;
+	}
+	public void setYearHigh(Double yearHigh) {
+		YearHigh = yearHigh;
+	}
+	public Double getAnnualizedGain() {
+		return AnnualizedGain;
+	}
+	public void setAnnualizedGain(Double annualizedGain) {
+		AnnualizedGain = annualizedGain;
+	}
+	public Double getHoldingsGain() {
+		return HoldingsGain;
+	}
+	public void setHoldingsGain(Double holdingsGain) {
+		HoldingsGain = holdingsGain;
+	}
+	public Double getChangePercentRealtime() {
+		return ChangePercentRealtime;
+	}
+	public void setChangePercentRealtime(Double changePercentRealtime) {
+		ChangePercentRealtime = changePercentRealtime;
+	}
+	public Double getPriceEPSEstimateCurrentYear() {
+		return PriceEPSEstimateCurrentYear;
+	}
+	public void setPriceEPSEstimateCurrentYear(Double priceEPSEstimateCurrentYear) {
+		PriceEPSEstimateCurrentYear = priceEPSEstimateCurrentYear;
+	}
+	public Double getBidRealtime() {
+		return BidRealtime;
+	}
+	public void setBidRealtime(Double bidRealtime) {
+		BidRealtime = bidRealtime;
+	}
+	public Double getAverageDailyVolume() {
+		return AverageDailyVolume;
+	}
+	public void setAverageDailyVolume(Double averageDailyVolume) {
+		AverageDailyVolume = averageDailyVolume;
+	}
+	public Double getPercentChange() {
+		return PercentChange;
+	}
+	public void setPercentChange(Double percentChange) {
+		PercentChange = percentChange;
+	}
+	public Double getChangeFromYearHigh() {
+		return ChangeFromYearHigh;
+	}
+	public void setChangeFromYearHigh(Double changeFromYearHigh) {
+		ChangeFromYearHigh = changeFromYearHigh;
+	}
+	public Double getFiftydayMovingAverage() {
+		return FiftydayMovingAverage;
+	}
+	public void setFiftydayMovingAverage(Double fiftydayMovingAverage) {
+		FiftydayMovingAverage = fiftydayMovingAverage;
+	}
+	public Double getAskRealtime() {
+		return AskRealtime;
+	}
+	public void setAskRealtime(Double askRealtime) {
+		AskRealtime = askRealtime;
+	}
+	public Double getTwoHundreddayMovingAverage() {
+		return TwoHundreddayMovingAverage;
+	}
+	public void setTwoHundreddayMovingAverage(Double twoHundreddayMovingAverage) {
+		TwoHundreddayMovingAverage = twoHundreddayMovingAverage;
+	}
+	public Double getPercentChangeFromTwoHundreddayMovingAverage() {
+		return PercentChangeFromTwoHundreddayMovingAverage;
+	}
+	public void setPercentChangeFromTwoHundreddayMovingAverage(Double percentChangeFromTwoHundreddayMovingAverage) {
+		PercentChangeFromTwoHundreddayMovingAverage = percentChangeFromTwoHundreddayMovingAverage;
+	}
+	public Double getPricePaid() {
+		return PricePaid;
+	}
+	public void setPricePaid(Double pricePaid) {
+		PricePaid = pricePaid;
+	}
+	public Double getVolume() {
+		return Volume;
+	}
+	public void setVolume(Double volume) {
+		Volume = volume;
+	}
+	public Double getPercentChangeFromYearLow() {
+		return PercentChangeFromYearLow;
+	}
+	public void setPercentChangeFromYearLow(Double percentChangeFromYearLow) {
+		PercentChangeFromYearLow = percentChangeFromYearLow;
+	}
+	public Double getDaysHigh() {
+		return DaysHigh;
+	}
+	public void setDaysHigh(Double daysHigh) {
+		DaysHigh = daysHigh;
+	}
+	public Double getEPSEstimateNextYear() {
+		return EPSEstimateNextYear;
+	}
+	public void setEPSEstimateNextYear(Double ePSEstimateNextYear) {
+		EPSEstimateNextYear = ePSEstimateNextYear;
+	}
+	public Double getPercentChangeFromFiftydayMovingAverage() {
+		return PercentChangeFromFiftydayMovingAverage;
+	}
+	public void setPercentChangeFromFiftydayMovingAverage(Double percentChangeFromFiftydayMovingAverage) {
+		PercentChangeFromFiftydayMovingAverage = percentChangeFromFiftydayMovingAverage;
+	}
+	public Double getOpen() {
+		return Open;
+	}
+	public void setOpen(Double open) {
+		Open = open;
+	}
+	public Double getDaysLow() {
+		return DaysLow;
+	}
+	public void setDaysLow(Double daysLow) {
+		DaysLow = daysLow;
+	}
+	public Double getDividendYield() {
+		return DividendYield;
+	}
+	public void setDividendYield(Double dividendYield) {
+		DividendYield = dividendYield;
+	}
+	public Double getAsk() {
+		return Ask;
+	}
+	public void setAsk(Double ask) {
+		Ask = ask;
+	}
+	public Double getEPSEstimateCurrentYear() {
+		return EPSEstimateCurrentYear;
+	}
+	public void setEPSEstimateCurrentYear(Double ePSEstimateCurrentYear) {
+		EPSEstimateCurrentYear = ePSEstimateCurrentYear;
+	}
+	public Double getYearLow() {
+		return YearLow;
+	}
+	public void setYearLow(Double yearLow) {
+		YearLow = yearLow;
+	}
+	public Double getChangeFromFiftydayMovingAverage() {
+		return ChangeFromFiftydayMovingAverage;
+	}
+	public void setChangeFromFiftydayMovingAverage(Double changeFromFiftydayMovingAverage) {
+		ChangeFromFiftydayMovingAverage = changeFromFiftydayMovingAverage;
+	}
+	public Double getBid() {
+		return Bid;
+	}
+	public void setBid(Double bid) {
+		Bid = bid;
+	}
+	public Double getShortRatio() {
+		return ShortRatio;
+	}
+	public void setShortRatio(Double shortRatio) {
+		ShortRatio = shortRatio;
+	}
+	public Double getChange() {
+		return Change;
+	}
+	public void setChange(Double change) {
+		Change = change;
+	}
+	public Double getChangeFromTwoHundreddayMovingAverage() {
+		return ChangeFromTwoHundreddayMovingAverage;
+	}
+	public void setChangeFromTwoHundreddayMovingAverage(Double changeFromTwoHundreddayMovingAverage) {
+		ChangeFromTwoHundreddayMovingAverage = changeFromTwoHundreddayMovingAverage;
+	}
+	public Double getEarningsShare() {
+		return EarningsShare;
+	}
+	public void setEarningsShare(Double earningsShare) {
+		EarningsShare = earningsShare;
+	}
+	public Double getBookValue() {
+		return BookValue;
+	}
+	public void setBookValue(Double bookValue) {
+		BookValue = bookValue;
+	}
+	public Double getChangeFromYearLow() {
+		return ChangeFromYearLow;
+	}
+	public void setChangeFromYearLow(Double changeFromYearLow) {
+		ChangeFromYearLow = changeFromYearLow;
+	}
+	public Double getOneyrTargetPrice() {
+		return OneyrTargetPrice;
+	}
+	public void setOneyrTargetPrice(Double oneyrTargetPrice) {
+		OneyrTargetPrice = oneyrTargetPrice;
+	}
+	public Double getPERatio() {
+		return PERatio;
+	}
+	public void setPERatio(Double pERatio) {
+		PERatio = pERatio;
+	}
+	public Double getPEGRatio() {
+		return PEGRatio;
+	}
+	public void setPEGRatio(Double pEGRatio) {
+		PEGRatio = pEGRatio;
+	}
+	public Double getLastTradePriceOnly() {
+		return LastTradePriceOnly;
+	}
+	public void setLastTradePriceOnly(Double lastTradePriceOnly) {
+		LastTradePriceOnly = lastTradePriceOnly;
+	}
+	public String getExDividendDate() {
+		return ExDividendDate;
+	}
+	public void setExDividendDate(String exDividendDate) {
+		ExDividendDate = exDividendDate;
+	}
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public String getCurrency() {
+		return Currency;
+	}
+	public void setCurrency(String currency) {
+		Currency = currency;
+	}
+	public String getDividendPayDate() {
+		return DividendPayDate;
+	}
+	public void setDividendPayDate(String dividendPayDate) {
+		DividendPayDate = dividendPayDate;
+	}
+	public String getLastTradeDate() {
+		return LastTradeDate;
+	}
+	public void setLastTradeDate(String lastTradeDate) {
+		LastTradeDate = lastTradeDate;
+	}
+	public String getStockExchange() {
+		return StockExchange;
+	}
+	public void setStockExchange(String stockExchange) {
+		StockExchange = stockExchange;
+	}
+	public String getSharesOwned() {
+		return SharesOwned;
+	}
+	public void setSharesOwned(String sharesOwned) {
+		SharesOwned = sharesOwned;
+	}
+	public String getLastTradeTime() {
+		return LastTradeTime;
+	}
+	public void setLastTradeTime(String lastTradeTime) {
+		LastTradeTime = lastTradeTime;
+	}
+	public String getOrderBookRealtime() {
+		return OrderBookRealtime;
+	}
+	public void setOrderBookRealtime(String orderBookRealtime) {
+		OrderBookRealtime = orderBookRealtime;
+	}
+	public String getMarketCapitalization() {
+		return MarketCapitalization;
+	}
+	public void setMarketCapitalization(String marketCapitalization) {
+		MarketCapitalization = marketCapitalization;
+	}
+	public String getLastTradeRealtimeWithTime() {
+		return LastTradeRealtimeWithTime;
+	}
+	public void setLastTradeRealtimeWithTime(String lastTradeRealtimeWithTime) {
+		LastTradeRealtimeWithTime = lastTradeRealtimeWithTime;
+	}
+	public String getDaysRange() {
+		return DaysRange;
+	}
+	public void setDaysRange(String daysRange) {
+		DaysRange = daysRange;
+	}
+	public String getTradeDate() {
+		return TradeDate;
+	}
+	public void setTradeDate(String tradeDate) {
+		TradeDate = tradeDate;
+	}
+	public String getTickerTrend() {
+		return TickerTrend;
+	}
+	public void setTickerTrend(String tickerTrend) {
+		TickerTrend = tickerTrend;
+	}
+	public String getYearRange() {
+		return YearRange;
+	}
+	public void setYearRange(String yearRange) {
+		YearRange = yearRange;
+	}
+	public String getHoldingsValueRealtime() {
+		return HoldingsValueRealtime;
+	}
+	public void setHoldingsValueRealtime(String holdingsValueRealtime) {
+		HoldingsValueRealtime = holdingsValueRealtime;
+	}
+	public String getChange_PercentChange() {
+		return Change_PercentChange;
+	}
+	public void setChange_PercentChange(String change_PercentChange) {
+		Change_PercentChange = change_PercentChange;
+	}
+	
+	
+		
+//		"HoldingsGainPercent":null,
+//		"symbol":"YHOO",
+//		"PriceEPSEstimateNextYear":"73.95",
+//		"ChangeinPercent":"-1.36%",
+//		"EPSEstimateNextQuarter":"0.17",
+//		"DaysValueChange":null,
+//		"HoldingsValue":null,
+//		"EBITDA":"151.08M",
+//		"PriceBook":"1.43",
+//		"Commission":null,
+//		"DividendShare":null,
+//		"PriceSales":"8.31",
+//		"MoreInfo":null,
+//		"PercebtChangeFromYearHigh":"-6.17%",
+//		"ExDividendDate":null,
+//		"HighLimit":null,
+//		"PreviousClose":"42.73",
+//		"Name":"Yahoo! Inc.",
+//		"PERatioRealtime":null,
+//		"YearHigh":"44.92",
+//		"AnnualizedGain":null,
+//		"HoldingsGain":null,
+//		"Currency":"USD",
+//		"ChangePercentRealtime":null,
+//		"DividendPayDate":null,
+//		"LastTradeDate":"10/20/2016",
+//		"PriceEPSEstimateCurrentYear":"86.02",
+//		"BidRealtime":null,
+//		"StockExchange":"NMS",""
+//		"SharesOwned":null,
+//		"AverageDailyVolume":"11512300",
+//		"PercentChange":"-1.36%",
+//		"ChangeFromYearHigh":"-2.77",
+//		"FiftydayMovingAverage":"43.15",
+//		"AskRealtime":null,
+//		"TwoHundreddayMovingAverage":"39.32",
+//		"PercentChangeFromTwoHundreddayMovingAverage":"+7.19%",
+//		"PricePaid":null,
+//		"LastTradeTime":"10:41am",
+//		"Volume":"2151683",
+//		"OrderBookRealtime":null,
+//		"MarketCapitalization":"40.12B",
+//		"LastTradeRealtimeWithTime":null,
+//		"PercentChangeFromYearLow":"+61.19%",
+//		"DaysHigh":"42.69",
+//		"AfterHoursChangeRealtime":null,
+//		"DaysRange":"42.07 - 42.69",
+//		"Symbol":"YHOO",
+//		"EPSEstimateNextYear":"0.57",
+//		"HoldingsGainRealtime":null,
+//		"PercentChangeFromFiftydayMovingAverage":"-2.31%",
+//		"Open":"42.69",
+//		"ChangeRealtime":null,
+//		"DaysLow":"42.07",
+//		"DividendYield":null,
+//		"Ask":"42.16",
+//		"EPSEstimateCurrentYear":"0.49",
+//		"YearLow":"26.15",
+//		"MarketCapRealtime":null,
+//		"TradeDate":null,
+//		"ChangeFromFiftydayMovingAverage":"-1.00",
+//		"Bid":"42.15",
+//		"LastTradeWithTime":"10:41am - <b>42.15<\/b>",
+//		"ErrorIndicationreturnedforsymbolchangedinvalid":null,
+//		"Notes":null,
+//		"DaysValueChangeRealtime":null,
+//		"TickerTrend":null,
+//		"DaysRangeRealtime":null,
+//		"ShortRatio":"5.05",""
+//		"Change":"-0.58",
+//		"ChangeFromTwoHundreddayMovingAverage":"2.83",
+//		"EarningsShare":"-5.18",
+//		"BookValue":"29.83",
+//		"ChangeFromYearLow":"16.00",
+//		"OneyrTargetPrice":"45.28",
+//		"PERatio":null,
+//		"YearRange":"26.15 - 44.92",
+//		"LowLimit":null,
+//		"HoldingsValueRealtime":null,
+//		"Change_PercentChange":"-0.58 - -1.36%",
+//		"PEGRatio":"-24.57",
+//		"HoldingsGainPercentRealtime":null,
+//		"LastTradePriceOnly":"42.15"		
+
+	
+}
+
+
