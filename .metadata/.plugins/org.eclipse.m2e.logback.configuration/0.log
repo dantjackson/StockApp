@@ -3439,3 +3439,578 @@ Caused by: org.apache.maven.plugin.prefix.NoPluginFoundForPrefixException: No pl
 2016-11-06 08:57:33,344 [Worker-524] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
 2016-11-06 08:57:33,345 [Worker-524] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-11-06 08:57:33,357 [Worker-524] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 09:42:43,393 [Worker-768] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: test:test:0.0.1-SNAPSHOT @ /Users/danjackson/Documents/workspace_neon/StockReadService/pom.xml.
+2016-11-17 09:42:43,588 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/5.2.4.Final/hibernate-entitymanager-5.2.4.Final.pom
+2016-11-17 09:42:43,686 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/5.2.4.Final/hibernate-entitymanager-5.2.4.Final.pom
+2016-11-17 09:42:43,715 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.pom
+2016-11-17 09:42:43,769 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.pom
+2016-11-17 09:42:43,806 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/15/jboss-parent-15.pom
+2016-11-17 09:42:43,863 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/15/jboss-parent-15.pom
+2016-11-17 09:42:43,915 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.2.4.Final/hibernate-core-5.2.4.Final.pom
+2016-11-17 09:42:43,955 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.2.4.Final/hibernate-core-5.2.4.Final.pom
+2016-11-17 09:42:43,977 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom
+2016-11-17 09:42:44,017 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom
+2016-11-17 09:42:44,041 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.pom
+2016-11-17 09:42:44,083 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.pom
+2016-11-17 09:42:44,119 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom
+2016-11-17 09:42:44,161 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom
+2016-11-17 09:42:44,187 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.pom
+2016-11-17 09:42:44,214 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.pom
+2016-11-17 09:42:44,246 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/specs/1.4/specs-1.4.pom
+2016-11-17 09:42:44,268 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/specs/1.4/specs-1.4.pom
+2016-11-17 09:42:44,292 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.pom
+2016-11-17 09:42:44,319 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.pom
+2016-11-17 09:42:44,346 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/config/config/1.2/config-1.2.pom
+2016-11-17 09:42:44,643 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/config/config/1.2/config-1.2.pom
+2016-11-17 09:42:44,685 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.pom
+2016-11-17 09:42:44,709 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.pom
+2016-11-17 09:42:44,736 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.pom
+2016-11-17 09:42:44,758 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.pom
+2016-11-17 09:42:44,780 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/12/jboss-parent-12.pom
+2016-11-17 09:42:44,807 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/12/jboss-parent-12.pom
+2016-11-17 09:42:44,830 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.3.0/classmate-1.3.0.pom
+2016-11-17 09:42:44,854 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.3.0/classmate-1.3.0.pom
+2016-11-17 09:42:44,875 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/24/oss-parent-24.pom
+2016-11-17 09:42:44,899 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/24/oss-parent-24.pom
+2016-11-17 09:42:44,926 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom
+2016-11-17 09:42:44,950 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom
+2016-11-17 09:42:44,974 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.pom
+2016-11-17 09:42:44,999 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.pom
+2016-11-17 09:42:45,025 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.1/cdi-api-1.1.pom
+2016-11-17 09:42:45,052 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.1/cdi-api-1.1.pom
+2016-11-17 09:42:45,076 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/21/weld-parent-21.pom
+2016-11-17 09:42:45,103 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/21/weld-parent-21.pom
+2016-11-17 09:42:45,131 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/el/el-api/2.2/el-api-2.2.pom
+2016-11-17 09:42:45,155 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/el/el-api/2.2/el-api-2.2.pom
+2016-11-17 09:42:45,179 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/web/el/2.2/el-2.2.pom
+2016-11-17 09:42:45,203 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/web/el/2.2/el-2.2.pom
+2016-11-17 09:42:45,230 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.pom
+2016-11-17 09:42:45,260 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.pom
+2016-11-17 09:42:45,283 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/spec/jboss-specs-parent/1.0.0.Beta1/jboss-specs-parent-1.0.0.Beta1.pom
+2016-11-17 09:42:45,307 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/spec/jboss-specs-parent/1.0.0.Beta1/jboss-specs-parent-1.0.0.Beta1.pom
+2016-11-17 09:42:45,343 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/5-beta-5/jboss-parent-5-beta-5.pom
+2016-11-17 09:42:45,367 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/5-beta-5/jboss-parent-5-beta-5.pom
+2016-11-17 09:42:45,392 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom
+2016-11-17 09:42:45,415 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom
+2016-11-17 09:42:45,438 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
+2016-11-17 09:42:45,466 [Worker-768] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
+2016-11-17 09:42:45,702 [Worker-768] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:42:45,743 [Worker-768] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 09:42:45,744 [Worker-768] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:42:45,753 [Worker-768] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 09:43:09,279 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.json:json:20150729
+2016-11-17 09:43:09,409 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6-sources.jar
+2016-11-17 09:43:09,414 [Worker-771] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for mysql:mysql-connector-java:5.1.6
+org.eclipse.core.runtime.CoreException: Could not resolve artifact mysql:mysql-connector-java:jar:sources:5.1.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:228) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:206) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2016-11-17 09:43:09,583 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/5.2.4.Final/hibernate-entitymanager-5.2.4.Final-sources.jar
+2016-11-17 09:43:09,654 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/5.2.4.Final/hibernate-entitymanager-5.2.4.Final-sources.jar
+2016-11-17 09:43:09,712 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hibernate:hibernate-entitymanager:5.2.4.Final
+2016-11-17 09:43:09,734 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final-sources.jar
+2016-11-17 09:43:09,811 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final-sources.jar
+2016-11-17 09:43:09,834 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.jboss.logging:jboss-logging:3.3.0.Final
+2016-11-17 09:43:09,875 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.2.4.Final/hibernate-core-5.2.4.Final-sources.jar
+2016-11-17 09:43:10,297 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.2.4.Final/hibernate-core-5.2.4.Final-sources.jar
+2016-11-17 09:43:10,329 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hibernate:hibernate-core:5.2.4.Final
+2016-11-17 09:43:10,349 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7-sources.jar
+2016-11-17 09:43:10,351 [Worker-771] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for antlr:antlr:2.7.7
+org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:jar:sources:2.7.7
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:249) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:228) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:206) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2016-11-17 09:43:10,475 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final-sources.jar
+2016-11-17 09:43:10,557 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final-sources.jar
+2016-11-17 09:43:10,575 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.jboss:jandex:2.0.0.Final
+2016-11-17 09:43:10,598 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.3.0/classmate-1.3.0-sources.jar
+2016-11-17 09:43:10,626 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.3.0/classmate-1.3.0-sources.jar
+2016-11-17 09:43:10,686 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.fasterxml:classmate:1.3.0
+2016-11-17 09:43:10,710 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.1/cdi-api-1.1-sources.jar
+2016-11-17 09:43:10,757 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.1/cdi-api-1.1-sources.jar
+2016-11-17 09:43:10,780 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.enterprise:cdi-api:1.1
+2016-11-17 09:43:10,802 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/el/el-api/2.2/el-api-2.2-sources.jar
+2016-11-17 09:43:10,831 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/el/el-api/2.2/el-api-2.2-sources.jar
+2016-11-17 09:43:10,847 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.el:el-api:2.2
+2016-11-17 09:43:10,870 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1-sources.jar
+2016-11-17 09:43:10,893 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1-sources.jar
+2016-11-17 09:43:10,920 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1
+2016-11-17 09:43:10,940 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0-sources.jar
+2016-11-17 09:43:10,966 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0-sources.jar
+2016-11-17 09:43:10,981 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.annotation:jsr250-api:1.0
+2016-11-17 09:43:11,001 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar
+2016-11-17 09:43:11,027 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar
+2016-11-17 09:43:11,051 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.inject:javax.inject:1
+2016-11-17 09:43:11,072 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1-sources.jar
+2016-11-17 09:43:11,159 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1-sources.jar
+2016-11-17 09:43:11,186 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for dom4j:dom4j:1.6.1
+2016-11-17 09:43:11,210 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final-sources.jar
+2016-11-17 09:43:11,237 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final-sources.jar
+2016-11-17 09:43:11,260 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+2016-11-17 09:43:11,291 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar
+2016-11-17 09:43:11,341 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar
+2016-11-17 09:43:11,381 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final
+2016-11-17 09:43:11,409 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA-sources.jar
+2016-11-17 09:43:11,498 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA-sources.jar
+2016-11-17 09:43:11,515 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.javassist:javassist:3.20.0-GA
+2016-11-17 09:43:11,548 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1-sources.jar
+2016-11-17 09:43:11,574 [Worker-771] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1-sources.jar
+2016-11-17 09:43:11,605 [Worker-771] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1
+2016-11-17 09:43:11,732 [Worker-768] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:43:11,735 [Worker-768] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 09:43:11,736 [Worker-768] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:43:11,737 [Worker-768] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 09:44:39,121 [Worker-766] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: test:test:0.0.1-SNAPSHOT @ /Users/danjackson/Documents/workspace_neon/StockReadService/pom.xml.
+2016-11-17 09:44:39,666 [Worker-766] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:44:39,668 [Worker-766] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 09:44:39,669 [Worker-766] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:44:39,670 [Worker-766] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 09:45:00,354 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.json:json:20150729
+2016-11-17 09:45:00,356 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hibernate:hibernate-core:5.2.4.Final
+2016-11-17 09:45:00,358 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.jboss.logging:jboss-logging:3.3.0.Final
+2016-11-17 09:45:00,360 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final
+2016-11-17 09:45:00,362 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.javassist:javassist:3.20.0-GA
+2016-11-17 09:45:00,366 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1
+2016-11-17 09:45:00,374 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.jboss:jandex:2.0.0.Final
+2016-11-17 09:45:00,376 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.fasterxml:classmate:1.3.0
+2016-11-17 09:45:00,377 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for dom4j:dom4j:1.6.1
+2016-11-17 09:45:00,385 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+2016-11-17 09:45:00,386 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.enterprise:cdi-api:1.1
+2016-11-17 09:45:00,388 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.el:el-api:2.2
+2016-11-17 09:45:00,389 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1
+2016-11-17 09:45:00,391 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.annotation:jsr250-api:1.0
+2016-11-17 09:45:00,393 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.inject:javax.inject:1
+2016-11-17 09:45:00,514 [Worker-772] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:45:00,515 [Worker-772] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 09:45:00,515 [Worker-772] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:45:00,527 [Worker-772] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 09:46:22,762 [Worker-766] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-11-17 09:46:22,968 [Worker-766] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: test:test:0.0.1-SNAPSHOT @ /Users/danjackson/Documents/workspace_neon/StockReadService/pom.xml.
+2016-11-17 09:46:23,107 [Worker-766] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StockReadService/src
+2016-11-17 09:46:23,108 [Worker-766] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /StockReadService/src/test/java because it overlaps with /StockReadService/src
+2016-11-17 09:46:23,230 [Worker-766] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-11-17 09:46:23,396 [Worker-775] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:46:23,398 [Worker-775] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 09:46:23,399 [Worker-775] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:46:23,401 [Worker-775] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 09:48:21,022 [Worker-766] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: test:test:0.0.1-SNAPSHOT @ /Users/danjackson/Documents/workspace_neon/StockReadService/pom.xml.
+2016-11-17 09:48:21,233 [Worker-766] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:48:21,235 [Worker-766] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 09:48:21,236 [Worker-766] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:48:21,237 [Worker-766] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 09:48:48,512 [Worker-773] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: test:test:0.0.1-SNAPSHOT @ /Users/danjackson/Documents/workspace_neon/StockReadService/pom.xml.
+2016-11-17 09:48:48,652 [Worker-773] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:48:48,654 [Worker-773] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 09:48:48,655 [Worker-773] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:48:48,656 [Worker-773] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 09:49:09,746 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.json:json:20150729
+2016-11-17 09:49:09,748 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hibernate:hibernate-core:5.2.4.Final
+2016-11-17 09:49:09,750 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.jboss.logging:jboss-logging:3.3.0.Final
+2016-11-17 09:49:09,752 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final
+2016-11-17 09:49:09,753 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.javassist:javassist:3.20.0-GA
+2016-11-17 09:49:09,755 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1
+2016-11-17 09:49:09,758 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.jboss:jandex:2.0.0.Final
+2016-11-17 09:49:09,760 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.fasterxml:classmate:1.3.0
+2016-11-17 09:49:09,762 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for dom4j:dom4j:1.6.1
+2016-11-17 09:49:09,764 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+2016-11-17 09:49:09,765 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.enterprise:cdi-api:1.1
+2016-11-17 09:49:09,767 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.el:el-api:2.2
+2016-11-17 09:49:09,769 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1
+2016-11-17 09:49:09,771 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.annotation:jsr250-api:1.0
+2016-11-17 09:49:09,772 [Worker-775] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.inject:javax.inject:1
+2016-11-17 09:49:09,889 [Worker-775] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:49:09,892 [Worker-775] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 09:49:09,895 [Worker-775] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:49:09,897 [Worker-775] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 09:49:34,242 [Worker-772] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-11-17 09:49:34,536 [Worker-772] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: test:test:0.0.1-SNAPSHOT @ /Users/danjackson/Documents/workspace_neon/StockReadService/pom.xml.
+2016-11-17 09:49:34,746 [Worker-772] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StockReadService/src
+2016-11-17 09:49:34,746 [Worker-772] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /StockReadService/src/test/java because it overlaps with /StockReadService/src
+2016-11-17 09:49:34,791 [Worker-772] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-11-17 09:49:34,950 [Worker-766] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:49:34,952 [Worker-766] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 09:49:34,953 [Worker-766] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:49:34,954 [Worker-766] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 09:52:27,608 [Worker-766] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-11-17 09:52:27,922 [Worker-766] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: test:test:0.0.1-SNAPSHOT @ /Users/danjackson/Documents/workspace_neon/StockReadService/pom.xml.
+2016-11-17 09:52:28,170 [Worker-766] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StockReadService/src
+2016-11-17 09:52:28,170 [Worker-766] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /StockReadService/src/test/java because it overlaps with /StockReadService/src
+2016-11-17 09:52:28,287 [Worker-766] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-11-17 09:52:28,469 [Worker-766] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:52:28,473 [Worker-766] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 09:52:28,475 [Worker-766] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:52:28,476 [Worker-766] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 09:59:46,764 [Worker-776] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: test:test:0.0.1-SNAPSHOT @ /Users/danjackson/Documents/workspace_neon/StockReadService/pom.xml.
+2016-11-17 09:59:46,944 [Worker-776] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:59:46,947 [Worker-776] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 09:59:46,948 [Worker-776] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:59:46,949 [Worker-776] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 09:59:49,234 [Worker-776] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-11-17 09:59:49,405 [Worker-776] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: test:test:0.0.1-SNAPSHOT @ /Users/danjackson/Documents/workspace_neon/StockReadService/pom.xml.
+2016-11-17 09:59:49,596 [Worker-776] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StockReadService/src
+2016-11-17 09:59:49,596 [Worker-776] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /StockReadService/src/test/java because it overlaps with /StockReadService/src
+2016-11-17 09:59:50,179 [Worker-776] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-11-17 09:59:50,327 [Worker-776] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:59:50,328 [Worker-776] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 09:59:50,330 [Worker-776] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 09:59:50,331 [Worker-776] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 10:00:24,702 [Worker-775] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-11-17 10:00:25,710 [Worker-775] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Stocker:Stocker:0.0.1-SNAPSHOT @ /Users/danjackson/Documents/workspace_neon/Stocker/pom.xml.
+2016-11-17 10:00:25,915 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.pom
+2016-11-17 10:00:25,966 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.pom
+2016-11-17 10:00:26,018 [Worker-775] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: test:test:0.0.1-SNAPSHOT @ /Users/danjackson/Documents/workspace_neon/StockReadService/pom.xml.
+2016-11-17 10:00:26,070 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.2.4.Final/hibernate-core-5.2.4.Final.jar
+2016-11-17 10:00:26,991 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.2.4.Final/hibernate-core-5.2.4.Final.jar
+2016-11-17 10:00:27,032 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar
+2016-11-17 10:00:27,148 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar
+2016-11-17 10:00:27,172 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar
+2016-11-17 10:00:27,228 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar
+2016-11-17 10:00:27,249 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar
+2016-11-17 10:00:27,349 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar
+2016-11-17 10:00:27,375 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar
+2016-11-17 10:00:27,424 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar
+2016-11-17 10:00:27,446 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar
+2016-11-17 10:00:27,479 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar
+2016-11-17 10:00:27,504 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar
+2016-11-17 10:00:27,550 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar
+2016-11-17 10:00:27,577 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.3.0/classmate-1.3.0.jar
+2016-11-17 10:00:27,612 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.3.0/classmate-1.3.0.jar
+2016-11-17 10:00:27,641 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+2016-11-17 10:00:27,687 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+2016-11-17 10:00:27,710 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar
+2016-11-17 10:00:27,737 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar
+2016-11-17 10:00:27,758 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.1/cdi-api-1.1.jar
+2016-11-17 10:00:27,782 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.1/cdi-api-1.1.jar
+2016-11-17 10:00:27,804 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/el/el-api/2.2/el-api-2.2.jar
+2016-11-17 10:00:27,827 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/el/el-api/2.2/el-api-2.2.jar
+2016-11-17 10:00:28,090 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar
+2016-11-17 10:00:28,132 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar
+2016-11-17 10:00:28,152 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar
+2016-11-17 10:00:28,173 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar
+2016-11-17 10:00:28,194 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar
+2016-11-17 10:00:28,216 [Worker-775] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar
+2016-11-17 10:00:30,212 [Worker-775] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Stocker/src
+2016-11-17 10:00:30,213 [Worker-775] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /Stocker/src/test/java because it overlaps with /Stocker/src
+2016-11-17 10:00:30,457 [Worker-775] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StockReadService/src
+2016-11-17 10:00:30,457 [Worker-775] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /StockReadService/src/test/java because it overlaps with /StockReadService/src
+2016-11-17 10:00:30,876 [Worker-775] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Stocker
+2016-11-17 10:00:30,974 [Worker-775] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 6 sec
+2016-11-17 10:00:31,377 [Worker-773] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:00:31,385 [Worker-773] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 10:00:31,387 [Worker-773] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:00:31,389 [Worker-773] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 10:00:32,023 [Worker-773] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:00:32,025 [Worker-773] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-17 10:00:32,025 [Worker-773] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:00:32,031 [Worker-773] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-17 10:00:32,031 [Worker-773] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Stocker
+2016-11-17 10:00:32,031 [Worker-773] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Stocker
+2016-11-17 10:00:32,039 [Worker-773] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:03:17,718 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:03:17,747 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 10:03:17,751 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:03:17,756 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 10:06:30,404 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:06:30,448 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-17 10:06:30,454 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:06:30,477 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-17 10:41:06,618 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:41:06,628 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 10:41:06,630 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:41:06,635 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 10:59:18,149 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:59:18,166 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 10:59:18,168 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:59:18,172 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 10:59:49,739 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:59:49,742 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 10:59:49,744 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 10:59:49,749 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 11:00:20,697 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:00:20,707 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 11:00:20,708 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:00:20,712 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 11:00:52,643 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:00:52,646 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 11:00:52,648 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:00:52,652 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 11:01:26,074 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:01:26,078 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 11:01:26,081 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:01:26,088 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 11:01:44,923 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:01:44,929 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 11:01:44,930 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:01:44,934 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 11:33:16,191 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:33:16,225 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 11:33:16,227 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:33:16,239 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 11:34:34,411 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:34:34,432 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 11:34:34,434 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:34:34,449 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 11:34:40,692 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:34:40,698 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 11:34:40,718 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:34:40,722 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 11:35:16,080 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:35:16,096 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 11:35:16,098 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:35:16,102 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 11:35:28,636 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:35:28,642 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 11:35:28,643 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:35:28,650 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 11:36:40,600 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:36:40,616 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 11:36:40,617 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:36:40,628 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 11:37:27,189 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:37:27,193 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 11:37:27,196 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:37:27,200 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 11:37:44,982 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:37:44,994 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 11:37:44,996 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 11:37:45,008 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 13:01:49,863 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 13:01:49,902 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 13:01:49,903 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 13:01:49,908 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 13:56:36,591 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 13:56:36,601 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-17 13:56:36,605 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 13:56:36,613 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-17 14:36:36,262 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 14:36:36,293 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 14:36:36,296 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 14:36:36,315 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 14:58:22,260 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 14:58:22,283 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 14:58:22,285 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 14:58:22,296 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:00:11,122 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:00:11,143 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:00:11,145 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:00:11,159 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:07:59,661 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:07:59,684 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:07:59,687 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:07:59,700 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:08:46,468 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:08:46,475 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:08:46,477 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:08:46,493 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:20:14,334 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:20:14,345 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:20:14,346 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:20:14,356 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:20:53,849 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:20:53,858 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:20:53,860 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:20:53,869 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:21:22,330 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:21:22,341 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:21:22,342 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:21:22,348 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:22:22,723 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:22:22,732 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:22:22,738 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:22:22,744 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:22:40,270 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:22:40,278 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:22:40,279 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:22:40,285 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:28:02,741 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:28:02,757 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:28:02,759 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:28:02,781 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:28:16,250 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:28:16,262 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:28:16,263 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:28:16,278 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:30:30,879 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:30:30,903 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:30:30,905 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:30:30,932 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:33:14,208 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:33:14,222 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:33:14,224 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:33:14,234 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:33:48,856 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:33:48,865 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:33:48,867 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:33:48,875 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:51:17,389 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:51:17,410 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:51:17,411 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:51:17,418 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:53:58,366 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:53:58,390 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:53:58,395 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:53:58,404 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:57:28,936 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:57:28,957 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:57:28,959 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:57:28,967 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:58:21,850 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:58:21,869 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:58:21,872 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:58:21,884 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:58:28,128 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:58:28,135 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:58:28,136 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:58:28,144 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 15:59:03,407 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:59:03,458 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 15:59:03,459 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 15:59:03,471 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:03:21,800 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:03:21,818 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:03:21,819 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:03:21,829 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:03:49,786 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:03:49,816 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:03:49,817 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:03:49,827 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:04:07,534 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:04:07,540 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:04:07,542 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:04:07,559 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:04:56,386 [Worker-51] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:04:56,418 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:04:56,419 [Worker-51] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:04:56,425 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:07:33,959 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:07:33,990 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:07:33,991 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:07:33,997 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:08:05,697 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:08:05,704 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:08:05,706 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:08:05,714 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:08:25,120 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:08:25,136 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:08:25,137 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:08:25,148 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:09:05,915 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:09:05,922 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:09:05,922 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:09:05,928 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:09:31,063 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:09:31,072 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:09:31,074 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:09:31,082 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:09:53,979 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:09:53,985 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:09:53,986 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:09:53,994 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:10:16,999 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:10:17,012 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:10:17,014 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:10:17,027 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:11:25,385 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:11:25,405 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:11:25,407 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:11:25,412 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:11:31,254 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:11:31,261 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:11:31,262 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:11:31,268 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:19:47,857 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:19:47,888 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:19:47,890 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:19:47,901 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:27:49,891 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:27:49,912 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-17 16:27:49,918 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:27:50,049 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-17 16:33:25,834 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:33:25,872 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:33:25,874 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:33:25,881 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 16:33:30,499 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:33:30,509 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 16:33:30,515 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 16:33:30,525 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 18:11:04,850 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:11:04,869 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 18:11:04,871 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:11:04,876 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 18:13:05,844 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:13:05,866 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 18:13:05,867 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:13:05,884 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 18:13:25,061 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:13:25,078 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 18:13:25,080 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:13:25,105 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 18:18:32,884 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:18:32,905 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 18:18:32,906 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:18:32,917 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 18:19:58,400 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:19:58,424 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 18:19:58,426 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:19:58,442 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 18:23:13,285 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:23:13,296 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 18:23:13,298 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:23:13,307 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 18:26:24,670 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:26:24,697 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 18:26:24,698 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:26:24,706 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 18:26:28,466 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:26:28,478 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 18:26:28,482 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:26:28,490 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 18:27:25,593 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:27:25,613 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 18:27:25,619 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:27:25,630 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 18:28:06,160 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:28:06,169 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 18:28:06,171 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:28:06,177 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 18:31:31,966 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:31:31,998 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 18:31:32,000 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:31:32,008 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-17 18:43:41,323 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:43:41,344 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-17 18:43:41,346 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-17 18:43:41,352 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources

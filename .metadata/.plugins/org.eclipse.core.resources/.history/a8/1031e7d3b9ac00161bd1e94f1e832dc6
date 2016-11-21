@@ -1,0 +1,35 @@
+package com.get;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class StockCSVTickerUploader {
+	
+	public static void main(String[] args) {
+
+		   // Need to define some Params slurper thing
+		   // DAN DAN DAN - hardcoded for now
+	       String csvFile = "/Users/danjackson/Documents/workspace_neon/StockCSV/UKStocks.csv";
+	       String line = "";
+	       String cvsSplitBy = ",";
+
+	       try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+
+	           while ((line = br.readLine()) != null) {
+
+	               // use comma as separator
+	               String[] stockrow = line.split(cvsSplitBy);
+
+	               System.out.println("StockID= " + stockrow[4] + " , name=" + stockrow[5] + "]");
+
+	           }
+
+	       } catch (IOException e) {
+	           e.printStackTrace();
+	       }
+
+	   }
+
+
+}

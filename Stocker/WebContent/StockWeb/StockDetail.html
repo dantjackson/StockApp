@@ -1,0 +1,150 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- 1. Load libraries -->
+     <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+
+
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>  
+
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+          <p>off canvas menu</p>
+        </div>    
+
+        <!--  MOBILE NAVIGATION-->
+
+
+        <div class="off-canvas-content" data-off-canvas-content>
+
+        <div class="title-bar">
+          <div class="title-bar-left">
+            <button class="menu-icon" type="button" data-open="offCanvas"></button>
+            <span class="title-bar-title">MENU</span>
+          </div>
+        </div>
+
+        <!--  DESKTOP NAVIGATION-->
+          <nav class="top-bar nav-desktop">
+
+          <div class="wrap">
+
+              <div class="top-bar-left">
+                <ul class="dropdown menu stockmenu" data-dropdown-menu>
+                  <li class="menu-text site-logo">Stocker</li>
+                  <li>
+                    <a href="#">Media</a>
+                    <ul class="menu vertical">
+                      <li><a href="#">Display</a></li>
+                      <li><a href="#">Configure</a></li>
+                      <li><a href="#">Trend</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Analysis</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Settings</a></li>
+                </ul>
+              </div>
+
+              <div class="top-bar-right">
+                <ul class="menu">
+                  <li><input type="search" placeholder="Search"></li>
+                  <li><button type="button" class="button">Search</button></li>
+                </ul>
+              </div>
+
+            </div>
+          </nav>
+
+
+          <!--  HERO SECTION -->
+          <section class="hero">
+            <div class="wrap">
+              <h1>Welcome To Stock Analyser</h1>
+              <p>Great Application Written By DJ</p>
+              <p>https://www.youtube.com/watch?v=_-CD_5YhJTA</p>
+
+              <a=href="#" class="button">Login</a=href="#">
+              <a=href="#" class="button success">New User</a>
+            </div>  
+          </section>
+
+          <!--  MAIN SECTION -->
+          <section class="main">
+            <div wrap class="wrap row small-up-1 medium-up-2 large-up-3">  
+              <hr>
+              <div class="blue column">
+              <my-app>Loading...</my-app>
+              </div>
+              <div class="blue column" <h3>hey<h3></div>  
+              <div class="blue column" <h3>hey<h3></div>
+              <div class="blue column" <h3>hey<h3></div> 
+              <div class="blue column" <h3>hey<h3></div>
+              <div class="blue column" <h3>hey<h3></div>  
+            </div>    
+          </section>
+
+          <!--  FOOTER -->
+          <footer class="footer">
+            <div class="row full-width">
+              <div class="wrap small-up-1 medium-up-3">  
+
+                <div class="column">
+                  <h4>Contact Info</h4>
+                  <hr></hr>
+                  <a href="#"><span>Phone</span> 222 2222 2222</a>
+                  <a href="#"><span>Email</span>blah.bah@dd.com</a>      
+                  <a href="#"><span>Address</span>123 Blah Street</a>          
+                </div>
+
+                <div class="column">
+                  <h4>Follow Us</h4>
+                  <hr></hr>
+                  <a href="#">Facebook</a>
+                  <a href="#">Twitter</a>
+                  <a href="#">Instagram</a>                    
+                </div>
+
+                <div class="column">
+                  <h4>About Us</h4>
+                  <hr></hr>
+                  <a href="#">About Us</a>
+                  <a href="#">Services</a>
+                  <a href="#">Contact Us</a>                    
+                </div>
+
+              </div>      
+            </div>  
+          </footer>
+        </div>  
+      </div>      
+    </div>  
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

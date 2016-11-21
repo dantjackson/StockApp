@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17-Nov-2016 14:58:21 by Hibernate Tools 5.2.0.Beta1 -->
+<hibernate-mapping>
+    <class name="HkUser" table="hk_user" catalog="Hokus" optimistic-lock="version">
+        <composite-id name="id" class="HkUserId">
+            <key-property name="userId" type="int">
+                <column name="user_id" />
+            </key-property>
+            <key-property name="userFirstName" type="string">
+                <column name="user_first_name" length="100" />
+            </key-property>
+            <key-property name="userLastName" type="string">
+                <column name="user_last_name" length="100" />
+            </key-property>
+            <key-property name="userEmail" type="string">
+                <column name="user_email" length="65" />
+            </key-property>
+            <key-property name="userLastLogin" type="timestamp">
+                <column name="user_last_login" length="19" />
+            </key-property>
+            <key-property name="userTitle" type="string">
+                <column name="user_title" length="10" />
+            </key-property>
+            <key-property name="userTel" type="string">
+                <column name="user_tel" length="45" />
+            </key-property>
+            <key-property name="userPass" type="string">
+                <column name="user_pass" length="20" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

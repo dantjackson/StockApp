@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17-Nov-2016 14:58:21 by Hibernate Tools 5.2.0.Beta1 -->
+<hibernate-mapping>
+    <class name="com.get.Hibernate.StockDetail" table="stock_detail" catalog="Hokus" optimistic-lock="version">
+        <composite-id name="id" class="StockDetailId">
+            <key-property name="stockId" type="string">
+                <column name="stock_id" length="10" />
+            </key-property>
+            <key-property name="stockDate" type="timestamp">
+                <column name="stock_date" length="19" />
+            </key-property>
+        </composite-id>
+        <property name="stockName" type="string">
+            <column name="stock_name" />
+        </property>
+        <property name="stockBid" type="big_decimal">
+            <column name="stock_bid" precision="13" scale="5" />
+        </property>
+        <property name="stockAsk" type="big_decimal">
+            <column name="stock_ask" precision="13" scale="5" />
+        </property>
+        <property name="previousClose" type="big_decimal">
+            <column name="PreviousClose" precision="13" scale="5" />
+        </property>
+        <property name="open" type="big_decimal">
+            <column name="Open" precision="13" scale="5" />
+        </property>
+        <property name="currency" type="string">
+            <column name="Currency" length="4" />
+        </property>
+        <property name="lastTradeDate" type="timestamp">
+            <column name="LastTradeDate" length="19" />
+        </property>
+        <property name="yearHigh" type="big_decimal">
+            <column name="YearHigh" precision="13" scale="5" />
+        </property>
+        <property name="yearLow" type="big_decimal">
+            <column name="YearLow" precision="13" scale="5" />
+        </property>
+        <property name="bookValue" type="big_decimal">
+            <column name="BookValue" precision="13" scale="5" />
+        </property>
+        <property name="earningsShare" type="big_decimal">
+            <column name="EarningsShare" precision="13" scale="5" />
+        </property>
+        <property name="pegratio" type="big_decimal">
+            <column name="PEGRatio" precision="13" scale="5" />
+        </property>
+        <property name="changeFromYearLow" type="string">
+            <column name="ChangeFromYearLow" length="20" />
+        </property>
+        <property name="yearRange" type="string">
+            <column name="YearRange" length="20" />
+        </property>
+        <property name="marketCapitalization" type="string">
+            <column name="MarketCapitalization" length="20" />
+        </property>
+        <property name="ebitda" type="string">
+            <column name="EBITDA" length="20" />
+        </property>
+        <property name="priceBook" type="big_decimal">
+            <column name="PriceBook" precision="13" scale="5" />
+        </property>
+        <property name="priceSales" type="big_decimal">
+            <column name="PriceSales" precision="13" scale="5" />
+        </property>
+        <property name="lastTradePriceOnly" type="big_decimal">
+            <column name="LastTradePriceOnly" precision="13" scale="5" />
+        </property>
+        <property name="changeFromTwoHundreddayMovingAverage" type="string">
+            <column name="ChangeFromTwoHundreddayMovingAverage" length="20" />
+        </property>
+        <property name="changeFromFiftydayMovingAverage" type="string">
+            <column name="ChangeFromFiftydayMovingAverage" length="20" />
+        </property>
+        <property name="volume" type="big_decimal">
+            <column name="Volume" precision="13" scale="5" />
+        </property>
+        <property name="averageDailyVolume" type="big_decimal">
+            <column name="AverageDailyVolume" precision="13" scale="5" />
+        </property>
+        <property name="shortRatio" type="big_decimal">
+            <column name="ShortRatio" precision="13" scale="5" />
+        </property>
+        <property name="epsestimateNextYear" type="big_decimal">
+            <column name="EPSEstimateNextYear" precision="13" scale="5" />
+        </property>
+        <property name="epsestimateNextQuarter" type="big_decimal">
+            <column name="EPSEstimateNextQuarter" precision="13" scale="5" />
+        </property>
+        <property name="priceEpsestimateCurrentYear" type="string">
+            <column name="PriceEPSEstimateCurrentYear" length="20" />
+        </property>
+        <property name="daysRange" type="string">
+            <column name="DaysRange" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

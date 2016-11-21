@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17-Nov-2016 14:58:21 by Hibernate Tools 5.2.0.Beta1 -->
+<hibernate-mapping>
+    <class name="HkUserRssSub" table="hk_user_rss_sub" catalog="Hokus" optimistic-lock="version">
+        <composite-id name="id" class="HkUserRssSubId">
+            <key-property name="userId" type="int">
+                <column name="user_id" />
+            </key-property>
+            <key-property name="rssFeedId" type="int">
+                <column name="rss_feed_id" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
