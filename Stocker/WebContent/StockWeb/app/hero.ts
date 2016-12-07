@@ -1,4 +1,5 @@
 export class Hero {
-  id: number;
-  name: string;
+  stockName: string;
+  stockId: string;
+  stockExc: string;
 }

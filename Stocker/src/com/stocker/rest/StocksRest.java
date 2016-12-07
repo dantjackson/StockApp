@@ -4,12 +4,13 @@ import java.util.List;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
-//http://localhost:8080/Stocker/stocker/stocks/ss
+//http://localhost:8080/Stocker/stocker/stocks/s&s&s
 
 @Path("/stocks")
 public class StocksRest {
 	
 	StocksLoad stockLoad= new StocksLoad();
+	StockDetailLoad stockDetailLoad= new StockDetailLoad();
 
 	@GET
 	@Path("/{dataSelections}")
@@ -18,4 +19,13 @@ public class StocksRest {
 		return stockLoad.findStockData(dataSelections);
 	}
 
+	@GET
+	@Path("/detail/{dataSelections}")
+	@Produces({ MediaType.APPLICATION_JSON })
+	public List<StockDetail> findStockDetailData(@PathParam("dataSelections") String dataSelections) {
+		return stockDetailLoad.findStockDetailData(dataSelections);
+	}
+	
 }
+
+

@@ -15,9 +15,12 @@ public class SqlMySQLConn {
 			
 
 			Class.forName("com.mysql.jdbc.Driver");  
-			url = "jdbc:mysql://localhost:3306/hokus";
-			username = "root";
-			password = "welcome1";
+			
+			// Get Params From Properties File
+			GetProps props = new GetProps();
+			url = props.getPropValues("DBUrl");
+			username = props.getPropValues("DBUser");;
+			password = props.getPropValues("DBPass");;
 
 		} catch (Exception e) {
 			System.out.println("Failed to Register JDBC Driver!");
@@ -26,7 +29,7 @@ public class SqlMySQLConn {
 		System.out.println("Oracle JDBC Driver Registered!");
 	}
 
-	
+
 	public static Connection getConnection() throws SQLException {
 		if (instance == null) {
 			instance = new SqlMySQLConn();

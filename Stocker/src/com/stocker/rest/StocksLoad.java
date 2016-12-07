@@ -20,7 +20,7 @@ public class StocksLoad {
 		StockName = parts[1];
 		StockId = parts[2]; 
 	    	      
-		String sql = "SELECT * FROM hokus.stock";
+		String sql = "SELECT * FROM hokus.stock LIMIT 10";
 		
 		try {
 			c = SqlMySQLConn.getConnection();

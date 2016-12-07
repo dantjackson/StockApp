@@ -15,6 +15,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -224,14 +225,14 @@ public class StockWorkerThread implements Runnable {
 			String Open, Connection wrtCon) {
 
 		String InsrtSql = "INSERT INTO hokus.stock_detail "
-				+ " ( stock_id, stock_name, stock_bid, stock_ask, YearHigh, "
+				+ " ( stock_id, stock_date, stock_name, stock_bid, stock_ask, YearHigh, "
 				+ " YearLow, PreviousClose, Currency, LastTradeDate, BookValue, EarningsShare, "
 				+ "	PEGRatio, ChangeFromYearLow, ChangeFromTwoHundreddayMovingAverage,  "
 				+ "	YearRange, ChangeFromFiftydayMovingAverage, Volume, AverageDailyVolume, "
 				+ " ShortRatio, EPSEstimateNextYear, EPSEstimateNextQuarter, PriceEPSEstimateCurrentYear, "
 				+ "	DaysRange, MarketCapitalization, EBITDA, PriceBook, PriceSales, "
 				+ "	LastTradePriceOnly, Open  ) "
-				+ " VALUES ( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+				+ " VALUES ( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		java.sql.PreparedStatement pstmt;
 
 		System.out.println(InsrtSql);
@@ -240,34 +241,39 @@ public class StockWorkerThread implements Runnable {
 			pstmt = wrtCon.prepareStatement(InsrtSql);
 			wrtCon.setAutoCommit(true);
 			pstmt.setString(1, StockId);
-			pstmt.setString(2, StockName);
-			pstmt.setString(3, StockBid);
-			pstmt.setString(4, StockAsk);
-			pstmt.setString(5, YearHigh);
-			pstmt.setString(6, YearLow);
-			pstmt.setString(7, PreviousClose);
-			pstmt.setString(8, Currency);
-			pstmt.setDate(9, LastTradeDate);
-			pstmt.setString(10, BookValue);
-			pstmt.setString(11, EarningsShare);
-			pstmt.setString(12, PEGRatio);
-			pstmt.setString(13, ChangeFromYearLow);
-			pstmt.setString(14, ChangeFromTwoHundreddayMovingAverage);
-			pstmt.setString(15, YearRange);
-			pstmt.setString(16, ChangeFromFiftydayMovingAverage);
-			pstmt.setString(17, Volume);
-			pstmt.setString(18, AverageDailyVolume);
-			pstmt.setString(19, ShortRatio);
-			pstmt.setString(20, EPSEstimateNextYear);
-			pstmt.setString(21, EPSEstimateNextQuarter);
-			pstmt.setString(22, PriceEPSEstimateCurrentYear);
-			pstmt.setString(23, DaysRange);
-			pstmt.setString(24, MarketCapitalization);
-			pstmt.setString(25, EBITDA);
-			pstmt.setString(26, PriceBook);
-			pstmt.setString(27, PriceSales);
-			pstmt.setString(28, LastTradePriceOnly);
-			pstmt.setString(29, Open);
+			
+			// Added a 5.5 Mysql there is no default for date allowed.
+			Calendar cal = Calendar.getInstance();
+			pstmt.setDate(2, new java.sql.Date(cal.getTimeInMillis()));
+			
+			pstmt.setString(3, StockName);
+			pstmt.setString(4, StockBid);
+			pstmt.setString(5, StockAsk);
+			pstmt.setString(6, YearHigh);
+			pstmt.setString(7, YearLow);
+			pstmt.setString(8, PreviousClose);
+			pstmt.setString(9, Currency);
+			pstmt.setDate(10, LastTradeDate);
+			pstmt.setString(11, BookValue);
+			pstmt.setString(12, EarningsShare);
+			pstmt.setString(13, PEGRatio);
+			pstmt.setString(14, ChangeFromYearLow);
+			pstmt.setString(15, ChangeFromTwoHundreddayMovingAverage);
+			pstmt.setString(16, YearRange);
+			pstmt.setString(17, ChangeFromFiftydayMovingAverage);
+			pstmt.setString(18, Volume);
+			pstmt.setString(19, AverageDailyVolume);
+			pstmt.setString(20, ShortRatio);
+			pstmt.setString(21, EPSEstimateNextYear);
+			pstmt.setString(22, EPSEstimateNextQuarter);
+			pstmt.setString(23, PriceEPSEstimateCurrentYear);
+			pstmt.setString(24, DaysRange);
+			pstmt.setString(25, MarketCapitalization);
+			pstmt.setString(26, EBITDA);
+			pstmt.setString(27, PriceBook);
+			pstmt.setString(28, PriceSales);
+			pstmt.setString(29, LastTradePriceOnly);
+			pstmt.setString(30, Open);
 
 			pstmt.addBatch();
 			pstmt.executeBatch();

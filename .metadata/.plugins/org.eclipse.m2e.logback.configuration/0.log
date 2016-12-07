@@ -4014,3 +4014,295 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2016-11-17 18:43:41,344 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
 2016-11-17 18:43:41,346 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-11-17 18:43:41,352 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-22 09:33:58,745 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 09:33:58,803 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-22 09:33:58,806 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 09:33:58,821 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-22 09:36:39,702 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 09:36:39,721 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-22 09:36:39,722 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 09:36:39,734 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-22 09:48:58,443 [Worker-243] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 09:48:58,463 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-22 09:48:58,468 [Worker-243] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 09:48:58,478 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-22 11:00:53,353 [Worker-243] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 11:00:53,451 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-22 11:00:53,453 [Worker-243] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 11:00:53,467 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-22 11:03:55,300 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 11:03:55,340 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-22 11:03:55,342 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 11:03:55,350 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-22 12:07:49,471 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 12:07:49,532 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-22 12:07:49,573 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 12:07:49,591 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-22 12:08:35,369 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 12:08:35,468 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-22 12:08:35,471 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 12:08:35,551 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-22 12:09:39,767 [Worker-281] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 12:09:39,786 [Worker-281] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-22 12:09:39,787 [Worker-281] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 12:09:39,795 [Worker-281] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-22 12:11:38,441 [Worker-284] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 12:11:38,464 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-22 12:11:38,467 [Worker-284] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 12:11:38,477 [Worker-284] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-22 17:45:37,628 [Worker-343] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 17:45:37,671 [Worker-343] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-22 17:45:37,674 [Worker-343] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-22 17:45:37,693 [Worker-343] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:21:11,022 [Worker-659] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:21:11,045 [Worker-659] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:21:11,047 [Worker-659] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:21:11,065 [Worker-659] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:21:43,174 [Worker-660] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:21:43,198 [Worker-660] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:21:43,199 [Worker-660] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:21:43,206 [Worker-660] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:28:02,330 [Worker-659] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:28:02,400 [Worker-659] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:28:02,403 [Worker-659] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:28:02,417 [Worker-659] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:29:24,921 [Worker-659] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:29:24,942 [Worker-659] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:29:24,943 [Worker-659] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:29:24,949 [Worker-659] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:29:28,264 [Worker-662] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:29:28,277 [Worker-662] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:29:28,279 [Worker-662] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:29:28,294 [Worker-662] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:29:53,103 [Worker-657] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:29:53,127 [Worker-657] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:29:53,129 [Worker-657] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:29:53,142 [Worker-657] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:30:01,700 [Worker-659] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:30:01,724 [Worker-659] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:30:01,726 [Worker-659] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:30:01,738 [Worker-659] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:34:33,815 [Worker-668] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:34:33,833 [Worker-668] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:34:33,836 [Worker-668] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:34:33,843 [Worker-668] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:36:15,521 [Worker-668] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:36:15,556 [Worker-668] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:36:15,557 [Worker-668] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:36:15,565 [Worker-668] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:36:19,244 [Worker-667] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:36:19,252 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:36:19,253 [Worker-667] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:36:19,293 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:36:32,005 [Worker-668] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:36:32,018 [Worker-668] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:36:32,019 [Worker-668] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:36:32,032 [Worker-668] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:36:54,163 [Worker-667] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:36:54,170 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:36:54,172 [Worker-667] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:36:54,184 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:37:03,244 [Worker-668] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:37:03,261 [Worker-668] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:37:03,262 [Worker-668] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:37:03,268 [Worker-668] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:38:21,846 [Worker-665] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:38:21,871 [Worker-665] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:38:21,872 [Worker-665] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:38:21,879 [Worker-665] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:39:55,957 [Worker-668] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:39:55,999 [Worker-668] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:39:56,001 [Worker-668] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:39:56,020 [Worker-668] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:40:39,691 [Worker-662] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:40:39,712 [Worker-662] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:40:39,714 [Worker-662] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:40:39,725 [Worker-662] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:41:20,814 [Worker-662] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:41:20,823 [Worker-662] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:41:20,825 [Worker-662] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:41:20,838 [Worker-662] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:43:57,529 [Worker-657] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:43:57,565 [Worker-657] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:43:57,566 [Worker-657] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:43:57,590 [Worker-657] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:44:05,309 [Worker-657] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:44:05,317 [Worker-657] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:44:05,318 [Worker-657] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:44:05,325 [Worker-657] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:50:33,208 [Worker-670] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:50:33,251 [Worker-670] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:50:33,252 [Worker-670] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:50:33,262 [Worker-670] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:51:05,262 [Worker-670] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:51:05,300 [Worker-670] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:51:05,301 [Worker-670] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:51:05,314 [Worker-670] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:51:29,374 [Worker-667] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:51:29,395 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:51:29,396 [Worker-667] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:51:29,412 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:51:35,862 [Worker-667] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:51:35,872 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:51:35,873 [Worker-667] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:51:35,882 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:52:18,422 [Worker-665] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:52:18,442 [Worker-665] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:52:18,443 [Worker-665] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:52:18,456 [Worker-665] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:52:47,120 [Worker-674] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:52:47,127 [Worker-674] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:52:47,128 [Worker-674] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:52:47,136 [Worker-674] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:53:42,301 [Worker-673] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:53:42,308 [Worker-673] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:53:42,309 [Worker-673] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:53:42,316 [Worker-673] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:53:48,540 [Worker-670] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:53:48,552 [Worker-670] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:53:48,553 [Worker-670] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:53:48,559 [Worker-670] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:55:14,867 [Worker-671] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:55:14,893 [Worker-671] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:55:14,894 [Worker-671] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:55:14,901 [Worker-671] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:57:28,129 [Worker-665] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:57:28,145 [Worker-665] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:57:28,146 [Worker-665] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:57:28,156 [Worker-665] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 14:58:10,047 [Worker-675] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:58:10,085 [Worker-675] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 14:58:10,086 [Worker-675] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 14:58:10,094 [Worker-675] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 15:00:19,502 [Worker-675] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 15:00:19,523 [Worker-675] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-25 15:00:19,525 [Worker-675] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 15:00:19,531 [Worker-675] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-25 15:28:39,044 [Worker-671] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 15:28:39,066 [Worker-671] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-25 15:28:39,067 [Worker-671] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 15:28:39,073 [Worker-671] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-25 15:34:22,589 [Worker-676] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 15:34:22,626 [Worker-676] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-25 15:34:22,627 [Worker-676] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 15:34:22,652 [Worker-676] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-25 15:34:46,397 [Worker-677] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 15:34:46,409 [Worker-677] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-25 15:34:46,410 [Worker-677] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 15:34:46,429 [Worker-677] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-25 15:35:09,726 [Worker-676] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 15:35:09,734 [Worker-676] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-25 15:35:09,735 [Worker-676] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 15:35:09,741 [Worker-676] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-25 15:37:08,867 [Worker-677] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 15:37:08,896 [Worker-677] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-11-25 15:37:08,897 [Worker-677] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-25 15:37:08,904 [Worker-677] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-11-29 09:24:07,452 [Worker-787] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 09:24:07,530 [Worker-787] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 09:24:07,532 [Worker-787] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 09:24:07,545 [Worker-787] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 09:24:25,807 [Worker-787] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 09:24:25,838 [Worker-787] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 09:24:25,839 [Worker-787] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 09:24:25,848 [Worker-787] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 09:26:18,171 [Worker-795] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 09:26:18,207 [Worker-795] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 09:26:18,210 [Worker-795] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 09:26:18,235 [Worker-795] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 11:39:46,087 [Worker-797] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:39:46,138 [Worker-797] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 11:39:46,139 [Worker-797] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:39:46,151 [Worker-797] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 11:40:54,333 [Worker-804] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:40:54,379 [Worker-804] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 11:40:54,380 [Worker-804] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:40:54,388 [Worker-804] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 11:41:25,984 [Worker-797] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:41:26,010 [Worker-797] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 11:41:26,012 [Worker-797] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:41:26,027 [Worker-797] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 11:41:41,620 [Worker-804] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:41:41,659 [Worker-804] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 11:41:41,660 [Worker-804] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:41:41,675 [Worker-804] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 11:44:09,803 [Worker-797] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:44:09,827 [Worker-797] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 11:44:09,828 [Worker-797] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:44:09,841 [Worker-797] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 11:46:03,231 [Worker-802] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:46:03,251 [Worker-802] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 11:46:03,254 [Worker-802] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:46:03,270 [Worker-802] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 11:46:26,454 [Worker-808] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:46:26,473 [Worker-808] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 11:46:26,474 [Worker-808] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:46:26,482 [Worker-808] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 11:47:06,053 [Worker-802] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:47:06,074 [Worker-802] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 11:47:06,077 [Worker-802] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:47:06,086 [Worker-802] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 11:50:38,415 [Worker-809] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:50:38,471 [Worker-809] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 11:50:38,472 [Worker-809] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:50:38,483 [Worker-809] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 11:55:52,435 [Worker-811] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:55:52,464 [Worker-811] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 11:55:52,465 [Worker-811] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:55:52,474 [Worker-811] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 11:56:28,795 [Worker-805] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:56:28,835 [Worker-805] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 11:56:28,839 [Worker-805] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 11:56:28,857 [Worker-805] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 13:57:42,599 [Worker-817] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 13:57:42,656 [Worker-817] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 13:57:42,657 [Worker-817] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 13:57:42,667 [Worker-817] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 13:58:32,964 [Worker-819] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 13:58:32,985 [Worker-819] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 13:58:32,985 [Worker-819] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 13:58:32,993 [Worker-819] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 13:58:54,669 [Worker-805] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 13:58:54,704 [Worker-805] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 13:58:54,706 [Worker-805] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 13:58:54,716 [Worker-805] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 13:59:09,306 [Worker-805] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 13:59:09,318 [Worker-805] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 13:59:09,322 [Worker-805] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 13:59:09,331 [Worker-805] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 14:02:10,083 [Worker-819] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 14:02:10,105 [Worker-819] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 14:02:10,110 [Worker-819] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 14:02:10,122 [Worker-819] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 14:03:16,639 [Worker-820] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 14:03:16,649 [Worker-820] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 14:03:16,650 [Worker-820] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 14:03:16,658 [Worker-820] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 14:04:03,592 [Worker-822] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 14:04:03,615 [Worker-822] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 14:04:03,618 [Worker-822] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 14:04:03,632 [Worker-822] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 14:05:13,649 [Worker-819] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 14:05:13,672 [Worker-819] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 14:05:13,672 [Worker-819] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 14:05:13,688 [Worker-819] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-11-29 14:10:00,558 [Worker-820] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 14:10:00,579 [Worker-820] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-11-29 14:10:00,580 [Worker-820] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-29 14:10:00,587 [Worker-820] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-12-03 17:46:35,132 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-03 17:46:35,172 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/main/resources
+2016-12-03 17:46:35,175 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-03 17:46:35,190 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/StockReadService/src/test/resources
+2016-12-03 17:46:49,317 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-03 17:46:49,342 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-12-03 17:46:49,347 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-03 17:46:49,361 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-12-07 14:15:25,784 [Worker-463] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-07 14:15:25,819 [Worker-463] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-12-07 14:15:25,822 [Worker-463] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-07 14:15:25,832 [Worker-463] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
+2016-12-07 14:15:26,927 [Worker-466] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-07 14:15:26,937 [Worker-466] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/main/resources
+2016-12-07 14:15:26,938 [Worker-466] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-07 14:15:26,947 [Worker-466] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/danjackson/Documents/workspace_neon/Stocker/src/test/resources
