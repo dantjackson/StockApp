@@ -11,11 +11,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var dashboard_component_1 = require('./dashboard.component');
-var heroes_component_1 = require('./heroes.component');
+var stocklist_component_1 = require('./stocklist.component');
+var portfolio_component_1 = require('./portfolio.component');
+var util_component_1 = require('./util.component');
 var routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
-    { path: 'heroes', component: heroes_component_1.HeroesComponent },
+    { path: 'portfolio', component: portfolio_component_1.PortfolioComponent },
+    { path: 'stocksearch', component: stocklist_component_1.StockListComponent },
+    { path: 'utils', component: util_component_1.UtilComponent },
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

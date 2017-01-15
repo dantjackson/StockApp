@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  
+  	<property name="USER_HOME" value="/Users/danjackson/Documents" /> 
+  
+  	<appender name="FILE-NAMED" class="ch.qos.logback.classic.sift.SiftingAppender">
+  
+  	<!-- This is MDC value -->
+  	<!-- We will assign a value to 'logFileName' via Java code -->
+  	<discriminator>
+    	<key>logFileName</key>
+    	<defaultValue>log-</defaultValue>
+  	</discriminator>
+  
+  		<sift>
+     
+    	<appender name="FILE-${logFileName}" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    	
+    		<file>${USER_HOME}/${logFileName}.log</file>
+     
+			<rollingPolicy
+				class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+				<FileNamePattern>${USER_HOME}/${logFileName}.%i.log.zip
+				</FileNamePattern>
+				<MinIndex>1</MinIndex>
+				<MaxIndex>10</MaxIndex>
+			</rollingPolicy>
+
+			<triggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+				<MaxFileSize>10MB</MaxFileSize>
+			</triggeringPolicy>
+	
+    		<encoder>
+      			<pattern>%d{HH:mm:ss.SSS}  %-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+      			<immediateFlush>true</immediateFlush>
+    			</encoder>
+  		</appender>
+		</sift>
+	</appender>
+  
+  	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    	<layout class="ch.qos.logback.classic.PatternLayout">
+      		<Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+    	</layout>
+  	</appender>  
+  
+  	<logger name="com.get" level="debug"
+		additivity="false">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE-NAMED" />
+	</logger>
+  
+  	<root level="debug" additivity="false">
+    	<appender-ref ref="STDOUT" />
+  	</root>
+  
+</configuration>

@@ -1,8 +1,8 @@
 "use strict";
-var Hero = (function () {
-    function Hero() {
+var Stock = (function () {
+    function Stock() {
     }
-    return Hero;
+    return Stock;
 }());
-exports.Hero = Hero;
+exports.Stock = Stock;
 //# sourceMappingURL=hero.js.map

@@ -4,6 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import com.stocker.rest.SqlMySQLConn;
+import com.stocker.rest.DataClasses.Stocks;
 
 public class StocksLoad {
 	
@@ -20,7 +21,7 @@ public class StocksLoad {
 		StockName = parts[1];
 		StockId = parts[2]; 
 	    	      
-		String sql = "SELECT * FROM hokus.stock LIMIT 10";
+		String sql = "SELECT * FROM hokus.stock LIMIT 50";
 		
 		try {
 			c = SqlMySQLConn.getConnection();

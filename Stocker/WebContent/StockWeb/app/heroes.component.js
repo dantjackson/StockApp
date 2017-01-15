@@ -46,9 +46,10 @@ var HeroesComponent = (function () {
             templateUrl: 'heroes.component.html',
             styleUrls: ['heroes.component.css']
         }), 
-        __metadata('design:paramtypes', [hero_service_1.HeroService, router_1.Router])
+        __metadata('design:paramtypes', [(typeof (_a = typeof hero_service_1.HeroService !== 'undefined' && hero_service_1.HeroService) === 'function' && _a) || Object, router_1.Router])
     ], HeroesComponent);
     return HeroesComponent;
+    var _a;
 }());
 exports.HeroesComponent = HeroesComponent;
 //# sourceMappingURL=heroes.component.js.map

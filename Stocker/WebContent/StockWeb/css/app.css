@@ -91,7 +91,6 @@ footer a:hover {
 	color: rgba(255,255,255,0.8);
 }
 
-
 /* MEDIA */
 @media (max-width: 639px) {
 
@@ -100,4 +99,8 @@ footer a:hover {
 	}
 }
 
+/* Bootstrap requirement to force content below navbar */
+body {
+	padding-top: 70px;
+}
 

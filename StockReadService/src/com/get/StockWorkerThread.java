@@ -22,6 +22,9 @@ import java.util.Map;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 
 /**
  * @author dan jackson Change History : To Test The Query
@@ -34,28 +37,38 @@ public class StockWorkerThread implements Runnable {
 	ArrayList<String> symbols;
 	Connection con;
 	String thread;
+	String logFileName;
+	static final Logger LOG = LoggerFactory.getLogger(StockInvoker.class);
 
 	@Override
 	public void run() {
-		System.out.println(Thread.currentThread().getName() + " Start ");
+		
+		// Setup Log
+		System.out.println("Calling Log File"+logFileName);
+		MDC.put("logFileName", logFileName);
+		StockInvoker si = new StockInvoker();
+		LOG.info(Thread.currentThread().getName() + " Start ");
 		// ------------------------------------------------------------
 		// Execute Code To Call YSQL API
 		// Process JSON and DB Load Data
 		// ------------------------------------------------------------
 		try {
 			getYQLStockDetailJSON();
+			LOG.info(Thread.currentThread().getName() + ":Completed" );
 		} catch (JSONException | IOException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+			LOG.error(Thread.currentThread().getName() + ":Failed:	" + e);
 		}
-		System.out.println(Thread.currentThread().getName() + " End.");
+		MDC.remove("logFileName");
 	}
 
 	// Defined as a constructor
-	public StockWorkerThread(String thread, ArrayList<String> symbols, Connection con) {
+	public StockWorkerThread(String thread, ArrayList<String> symbols, Connection con, String logFileFormat) {
 		// Setup Class Vars From Invoker Args
 		this.con = con;
 		this.symbols = symbols;
 		this.thread = thread;
+		this.logFileName = logFileFormat;
 	}
 
 	private static String readAll(Reader rd) throws IOException {
@@ -88,24 +101,22 @@ public class StockWorkerThread implements Runnable {
 		List<String> StockList = this.symbols;
 		String EscapedStockList = String.join(",", StockList);
 		EscapedStockList = URLEncoder.encode(EscapedStockList, "UTF-8");
-		System.out.println(EscapedStockList);
+		//LOG.info(EscapedStockList);
 
 		String StringURL = "https://query.yahooapis.com/v1/public/yql?q="
 				+ "select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(" + EscapedStockList
 				+ ")&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
-		System.out.println(StringURL);
+		//LOG.info(StringURL);
 
 		JSONObject json = readJsonFromUrl(StringURL);
-
-		System.out.println(json.toString());
+		//LOG.info("JSON returned:" + json.toString());
 
 		// Recurse the JSON object to the results JSON object
 		JSONObject query = json.getJSONObject("query");
 		JSONObject results = query.getJSONObject("results");
 
 		// Count Number of keys in results to determine getJSON or JSON Array.
-		System.out.print("NumberOfKeys-" + results.length());
-
+		// If only single symbol returned you to do not get a JSON array.
 		try {
 			results.getJSONArray("quote");
 			singlequotebool = false;
@@ -115,18 +126,27 @@ public class StockWorkerThread implements Runnable {
 
 		// If many quotes returned object is JSON array otherwise object!
 		if (singlequotebool == true) {
-			JSONObject quote = results.getJSONObject("quote");
-			quoteshash = ProcessQuoteData(quote);
-			System.out.print("NumberOfHashKeys-" + quoteshash.size());
-			InsertStockDetail(quoteshash);
+			try {
+				JSONObject quote = results.getJSONObject("quote");
+				quoteshash = ProcessQuoteData(quote);
+				InsertStockDetail(quoteshash);
+			}
+			catch (Exception e) {
+				LOG.debug("JSON returned:" + json.toString());
+			}
 		} else {
 
 			JSONArray quote = results.getJSONArray("quote");
 
 			for (int i = 0, size = quote.length(); i < size; i++) {
-				JSONObject objectInArray = quote.getJSONObject(i);
-				quoteshash = ProcessQuoteData(objectInArray);
-				InsertStockDetail(quoteshash);
+				try {
+					JSONObject objectInArray = quote.getJSONObject(i);
+					quoteshash = ProcessQuoteData(objectInArray);
+					InsertStockDetail(quoteshash);
+				}
+				catch (Exception e) {
+					LOG.debug("JSON returned:" + json.toString());
+				}
 			}
 		}
 	} // Sub
@@ -137,7 +157,7 @@ public class StockWorkerThread implements Runnable {
 
 		// "...and get their component and their value."
 		String[] elementNames = JSONObject.getNames(json);
-		System.out.printf("%d ELEMENTS IN CURRENT OBJECT:\n", elementNames.length);
+		//LOG.info("%d ELEMENTS IN CURRENT OBJECT:\n", elementNames.length);
 		for (String elementName : elementNames) {
 			try {
 				String value = json.getString(elementName);
@@ -147,7 +167,7 @@ public class StockWorkerThread implements Runnable {
 				// Do Nothing
 			}
 		}
-		System.out.print("NumberOfHashKeys-" + out.size());
+		LOG.info("Symbol:" + out.get("symbol") + "NumberOfHashKeys:" + out.size());
 		return out;
 	}
 
@@ -207,6 +227,7 @@ public class StockWorkerThread implements Runnable {
 					YearRange, ChangeFromFiftydayMovingAverage, Volume, AverageDailyVolume, ShortRatio,
 					EPSEstimateNextYear, EPSEstimateNextQuarter, PriceEPSEstimateCurrentYear, DaysRange,
 					MarketCapitalization, EBITDA, PriceBook, PriceSales, LastTradePriceOnly, Open, con);
+		
 		} catch (SQLException e) {
 			e.printStackTrace();
 			throw new RuntimeException(e);
@@ -222,7 +243,7 @@ public class StockWorkerThread implements Runnable {
 			String Volume, String AverageDailyVolume, String ShortRatio, String EPSEstimateNextYear,
 			String EPSEstimateNextQuarter, String PriceEPSEstimateCurrentYear, String DaysRange,
 			String MarketCapitalization, String EBITDA, String PriceBook, String PriceSales, String LastTradePriceOnly,
-			String Open, Connection wrtCon) {
+			String Open, Connection wrtCon) throws SQLException {
 
 		String InsrtSql = "INSERT INTO hokus.stock_detail "
 				+ " ( stock_id, stock_date, stock_name, stock_bid, stock_ask, YearHigh, "
@@ -235,7 +256,7 @@ public class StockWorkerThread implements Runnable {
 				+ " VALUES ( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		java.sql.PreparedStatement pstmt;
 
-		System.out.println(InsrtSql);
+		//LOG.info(InsrtSql);
 
 		try {
 			pstmt = wrtCon.prepareStatement(InsrtSql);
@@ -277,9 +298,10 @@ public class StockWorkerThread implements Runnable {
 
 			pstmt.addBatch();
 			pstmt.executeBatch();
-			System.out.println("Committed.");
+			LOG.info("LoadedToDB:" + StockId);
 		} catch (Exception sqle) {
-			System.out.println("Exception in writing to the database " + sqle.getMessage());
+			LOG.error("FailedToLoadToDB:" + StockId + " Error:" + sqle.getMessage());
+			throw sqle;
 		}
 	}
 

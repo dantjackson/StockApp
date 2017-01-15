@@ -29,31 +29,31 @@ public class CtoFService {
 
 	@Path("/filtervalcols")
 	@GET
-	@Produces("application/xml")
-    public GenericEntity<List<String>> getValueFilterCols() {
+	@Produces("application/json")
+    public GenericEntity<ArrayList<String>> getValueFilterCols() {
 
-		// http://stackoverflow.com/questions/5392413/jersey-return-a-list-of-strings
-        List<String> list = Arrays.asList("test", "as");
+        // http://localhost:8080/Stocker/stocker/metadata/filtervalcols
+		ArrayList<String> valColList = new ArrayList<String>();
 
-        return new GenericEntity<List<String>>(list) {};
+        //return new GenericEntity<ArrayList<String>>(ArrayList) {};
 
-		//valColList.add("Exchange");
-		//valColList.add("Currency");
-		//valColList.add("Market");
-		//valColList.add("Company Value");
-		//valColList.add("1 Year Trend");
+		valColList.add("Exchange");
+		valColList.add("Currency");
+		valColList.add("Market");
+		valColList.add("Company Value");
+		valColList.add("1 Year Trend");
 
 		// Displaying elements of LinkedHashMap
 		//return valColList;
         // use javax.ws.rs.core.GenericEntity to return the arraylist
-        //return new GenericEntity<ArrayList<String>>(valColList) {};
+        return new GenericEntity<ArrayList<String>>(valColList) {};
 	}
 
 	// This end point is invoked when the user selects a data column.  It returns a LOV which can then be selectively filtered on.
-	@Path("/dropdown/{column}")
-	@GET
-	@Produces("application/json")
-	public String convertCtoFfromInput(@PathParam("column") Double c) {
+	//@Path("/dropdown/{column}")
+	//@GET
+	//@Produces("application/json")
+	//public String convertCtoFfromInput(@PathParam("column") Double c) {
 
 		// Determine what the column contains and invoke the relevant producer.
 
@@ -65,8 +65,8 @@ public class CtoFService {
 		// Return the resultant list as JSON.
 
 		// Get SQL Values ??
-        return null;
-	}
+    //    return null;
+	//}
 
 	// This end point is invoked when the user selects a data column.  It returns a LOV which can then be selectively filtered on.
 

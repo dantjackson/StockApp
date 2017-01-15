@@ -24,7 +24,7 @@ public class SqlMySQLConn {
 			System.out.println("Failed to Register JDBC Driver!");
 			e.printStackTrace();
 		}
-		System.out.println("Oracle JDBC Driver Registered!");
+		//System.out.println("Oracle JDBC Driver Registered!");
 	}
 
 	
@@ -34,7 +34,7 @@ public class SqlMySQLConn {
 			instance = new SqlMySQLConn();
 		}
 		try {
-			System.out.println("URL"+instance.url+instance.username);
+			//System.out.println("URL"+instance.url+instance.username);
 			return DriverManager.getConnection(instance.url,instance.username,instance.password);
 		} catch (SQLException e) {
 			throw e;

@@ -11,15 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Stock Search';
-        this.detail = 'Stock Detail';
-        // This sets up the Call to the child component.
-        this.selectedstockDetail = '123';
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n   <div class=\"blue column\">\n   <h1>{{title}}</h1>\n   <nav>\n     <a routerLink=\"/dashboard\">Dashboard</a>\n     <a routerLink=\"/heroes\">Heroes</a>\n   </nav>\n   <router-outlet></router-outlet>\n   </div>\n "
+            template: "\n      <div class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">\n        <div class=\"container-fluid\">\n          <div class=\"navbar-header\">\n            <a class=\"navbar-brand\">Stocker</a>\n            <ul class=\"nav navbar-nav\" routerLinkActive=\"active\">\n                <li class=\"nav-item\"><a class=\"nav-link\" routerLink=\"/dashboard\">Home</a></li>\n                <li class=\"nav-item\"><a class=\"nav-link\" routerLink=\"/portfolio\">Portfolio</a></li>\n                <li class=\"nav-item\"><a class=\"nav-link\" routerLink=\"/stocksearch\">Stock Search</a></li>\n                <li class=\"nav-item\"><a class=\"nav-link\" routerLink=\"/utils\">Utilities</a></li>\n            </ul>\n          </div>\n          <div class=\"collapse navbar-collapse\">\n            <ul class=\"nav navbar-nav navbar-right\">\n              <li><a href=\"https://github.com/mlaval/angular2-bootstrap\">Github</a></li>\n            </ul>\n          </div>\n        </div>\n      </div>      \n      <div class=\"container\">\n          <div class=\"content\">\n            <router-outlet></router-outlet>\n        </div>\n      </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

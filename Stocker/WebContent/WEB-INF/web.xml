@@ -19,10 +19,12 @@
 		<load-on-startup>1</load-on-startup>
 
 		<!-- Addded This to Get Around Issue When running via maven -->
+		<!-- 
 		<init-param>
 			<param-name>com.sun.jersey.config.property.packages</param-name>
 			<param-value>com.stocker.rest</param-value>
 		</init-param>
+		-->
 
 	</servlet>
 

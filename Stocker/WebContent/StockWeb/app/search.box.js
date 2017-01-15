@@ -23,7 +23,7 @@ var SearchBox = (function () {
     SearchBox = __decorate([
         core_1.Component({
             selector: 'search-box',
-            template: "<div>\n\t\t<input #input type=\"text\" (input)=\"update.emit(input.value);\">\n\t</div>"
+            template: "\n\t<div class=\"container\">\n      <div class=\"row\">\n\t    <div class=\"col-md-3\">\n\t\t  <h3>Search Stocks</h3>\n          <div id=\"custom-search-input\">\n\t\t    <div class=\"input-group col-md-12\">\n\t\t      <input #input type=\"text\" (input)=\"update.emit(input.value);\" class=\"form-control input-lg\" placeholder=\"Stock ID\" />\n              <span class=\"input-group-btn\">\n\t\t\t    <button class=\"btn btn-info btn-lg\" type=\"button\">\n\t\t\t\t  <i class=\"glyphicon glyphicon-search\"></i>\n\t\t\t\t</button>\n\t\t\t  </span>\t\n\t\t\t</div>\t\t\n\t\t  </div>\n\t\t</div>\n      </div>\t\t  \t  \t  \n\t</div>"
         }), 
         __metadata('design:paramtypes', [])
     ], SearchBox);

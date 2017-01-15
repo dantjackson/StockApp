@@ -11,7 +11,6 @@ export class SearchPipe{
       return value;
     }
     
-
     if ( typeof term!=='undefined') {
     console.log(term);
       return value.filter((item)=> item.stockId.includes(term));   

@@ -4,6 +4,8 @@ import java.util.List;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
+import com.stocker.rest.DataClasses.Stocks;
+
 //http://localhost:8080/Stocker/stocker/stocks/s&s&s
 
 @Path("/stocks")

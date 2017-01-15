@@ -1,0 +1,15 @@
+15:33:56.995  5239 [main] DEBUG com.get.StockInvoker - How are you today?
+15:33:56.997  5241 [main] INFO  com.get.StockInvoker - I am fine.
+15:33:56.998  5242 [main] WARN  com.get.StockInvoker - I love programming.
+15:33:57.576  5820 [main] INFO  com.get.StockInvoker - Calling ThreadWorker['0NOL.L', '0QXN.L', '0R6Z.L', '101198.L', '10NC.L', '110011.L']
+15:33:57.579  5823 [main] INFO  com.get.StockInvoker - Calling ThreadWorker['112787.L', '113813.L', '118821.L', '123055.L', '124388.L', '125795.L']
+15:33:57.579  5823 [main] INFO  com.get.StockInvoker - Calling ThreadWorker['128613.L', '131463.L', '131746.L', '133716.L', '133772.L', '133789.L']
+15:33:57.579  5823 [main] INFO  com.get.StockInvoker - Calling ThreadWorker['134884.L', '135219.L', '136281.L', '136556.L', '137255.L', '137267.L']
+15:33:57.580  5824 [main] INFO  com.get.StockInvoker - Calling ThreadWorker['137304.L', '137305.L', '137355.L', '137817.L', '138232.L', '138233.L']
+15:33:57.580  5824 [main] INFO  com.get.StockInvoker - Calling ThreadWorker['138508.L', '138569.L', '138570.L', '138610.L', '138654.L', '138655.L']
+15:33:57.581  5825 [main] INFO  com.get.StockInvoker - Calling ThreadWorker['138967.L', '138968.L', '138969.L', '17GK.L', '20974.L', '21998.IL']
+15:33:57.581  5825 [main] INFO  com.get.StockInvoker - Calling ThreadWorker['2865.L', '35780.L', '365.L', '36GK.L', '37OC.L', '3IN.L']
+15:33:57.581  5825 [main] INFO  com.get.StockInvoker - Calling ThreadWorker['3LEG.L', '4095.L', '40JP.L', '40SI.L', '40XT.L', '44RS.L']
+15:33:57.581  5825 [main] INFO  com.get.StockInvoker - Calling ThreadWorker['4553.L', '51FL.L', '5578.L', '55BC.L', '59PQ.L', '66XD.L']
+15:33:57.581  5825 [main] INFO  com.get.StockInvoker - Calling ThreadWorker['7035.L', '71HT.L', '86IP.L', '87FZ.L', '87UC.L', '89VS.L']
+15:33:57.582  5826 [main] INFO  com.get.StockInvoker - Calling ThreadWorker['97452.L', '98KI.L', 'AAA.L', 'AAEV.L', 'AAL.L', 'AATG.L']

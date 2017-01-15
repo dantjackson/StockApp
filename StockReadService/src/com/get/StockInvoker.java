@@ -4,46 +4,73 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 
 public class StockInvoker {
+	
+	static final Logger LOG = LoggerFactory.getLogger(StockInvoker.class);
 
 	ArrayList<String> stocks;
 	Integer symbolperthread = 6;
 	public Connection con;
 
-	public static void main(String[] args) {
+	public String invoke() {
+		
+		String logFileFormat;
+		
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("ddMMyy-HHmmss");
+		LocalDateTime localDateTime = LocalDateTime.now();
+		logFileFormat = "StockReaderLog-" + dtf.format(localDateTime).toString();
+		
+		MDC.put("logFileName", logFileFormat);
 		StockInvoker si = new StockInvoker();
+		
 		try {
 			// Call Method To Invoke Processing
 			si.GetStockListFromDB("null");
-			si.IterateBatchRows();
+			si.IterateBatchRows(logFileFormat);
 		} catch (Exception e) {
 			e.printStackTrace();
+			LOG.error("Problem Invoking Stock Invoker:"+e);
 		}
+		
+		MDC.remove("logFileName");
+		return logFileFormat;
 	}
 
-	public void IterateBatchRows () {
+	public void IterateBatchRows (String logFileFormat) throws InterruptedException {
 
 		Integer innerLoopMax = 0;
 		Integer rowCount = 0;
 		Integer innercarray = 0;
+		Integer threadId = 0;
 		ArrayList<String> subsymbols;
 		
 		ArrayList<String> listofallsymbols = this.stocks;
 		rowCount = listofallsymbols.size();
-		ExecutorService executor = Executors.newFixedThreadPool(5);
+		LOG.info("No Of Symbols To Process:" + rowCount);
 		
-		System.out.println(rowCount);
+		// Define an Executor Service
+		final int numThreads = 5;
+		ExecutorService executor = Executors.newFixedThreadPool(numThreads);
+		
          for (int i = 0; i < rowCount; i=i+symbolperthread) {
  
              // Thread Call Every symbolperthread Rows
              innerLoopMax = Math.min(i+symbolperthread,rowCount);          
              subsymbols = new ArrayList<String>();
              innercarray = 0;
+             threadId ++;
              
              // Build List Of Symbols Per Thread
              for (int c = i; c < innerLoopMax; c++) {
@@ -53,22 +80,29 @@ public class StockInvoker {
              	
              try { 
                // Invoke Processing on a worker thread.
-               System.out.println("Calling ThreadWorker" + subsymbols);
-               Runnable worker = new StockWorkerThread("Thread"+i, subsymbols, this.con);
+               LOG.info("Calling ThreadWorker:" + threadId + " Symbols:" + subsymbols.size());
+               Runnable worker = new StockWorkerThread("Thread"+threadId, subsymbols, this.con, logFileFormat);
                executor.execute(worker);
                  }
              catch (Exception e) {
                          e.printStackTrace();
-                         // QASLog.logErrorToDB(con, this.BatchID, e.getMessage(),"Error Invoking Worker Thread");}
-             }
-              finally {};
+                         LOG.error("Exception Calling threadWorker" + e);
+             };
              
          } // for
-	}
          
-    //-------------------------------------------------    
-    // Add code to wait for all threads to complete.
-    //-------------------------------------------------     
+      //-------------------------------------------------    
+      // If threads do not complete in 60 seconds terminate
+      //-------------------------------------------------   
+     executor.shutdown();    
+     if (executor.awaitTermination(60, TimeUnit.SECONDS)) {
+    	  LOG.info("All Threads Completed");
+    	} else {
+    	  LOG.warn("Forcing shutdown Timeout:60");
+    	  executor.shutdownNow();
+    	}   
+         
+	} // IterateBatchRows
 
 	public void GetStockListFromDB(String Exchange) {
 

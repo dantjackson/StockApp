@@ -1,33 +1,43 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
-import { FormsModule }    from '@angular/forms';
-import { HttpModule }     from '@angular/http';
+import { RouterModule }         from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard.component';
-import { HeroesComponent }      from './heroes.component';
-import { HeroService }          from './hero.service';
-import { StockDetailComponent } from './stock-detail.component';
+import { PortfolioComponent }   from './portfolio.component';
+
+import { UtilComponent }   from './util.component';
+
+import { StockListComponent }   from './stocklist.component';
+import { StockListService }     from './stocklist.service';
+import { StockDetailComponent } from './stockdetail.component';
+import { SearchBox }            from './search.box';
+import { SearchName }           from './search.name';
+import { SearchPipe }           from './search.pipe';
+
+import { DropdownComponent }          from './dropdown.component';
+
 import { AppRoutingModule }     from './app-routing.module';
-import {SearchBox}              from './search.box';
-import {SearchPipe}            from './search.pipe';
+
+import { PagerService } from './_services/index';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
     DashboardComponent,
-    HeroesComponent,
+    PortfolioComponent,
+    StockListComponent,
     StockDetailComponent,
-    SearchBox,
-    SearchPipe
+    SearchBox,SearchName,SearchPipe,
+    UtilComponent, DropdownComponent
   ],
-  providers: [ HeroService ],
-  bootstrap: [ AppComponent ]
+  providers: [ StockListService, PagerService ],
+  bootstrap: [ AppComponent]
 })
 export class AppModule { }
