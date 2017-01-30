@@ -1,8 +1,11 @@
 import { Component }      from '@angular/core';
-import { StockDetail }    from './stockdetail';
+import {AuthenticationService, User} from './auth.service'
+import { Router, NavigationStart, NavigationEnd, NavigationError, NavigationCancel, RoutesRecognized } from '@angular/router';
+
 
 @Component({
   selector: 'my-app',
+  providers: [AuthenticationService],
   template: `
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
@@ -18,6 +21,10 @@ import { StockDetail }    from './stockdetail';
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="https://github.com/mlaval/angular2-bootstrap">Github</a></li>
+              <li>
+                    <a class="nav-link" (click)="logout()">Logout</a>
+              </li>
+              <li class="nav-item">{{user.email}}</li>
             </ul>
           </div>
         </div>
@@ -30,5 +37,36 @@ import { StockDetail }    from './stockdetail';
   `
 })
 export class AppComponent {
+
+  user = new User('','');
+
+  constructor(
+        private _service:AuthenticationService,  router: Router) {
+  router.events.forEach((event) => {
+    if(event instanceof NavigationStart) {
+      //console.debug("Route Changed");
+      //console.debug(event.url);
+      var eventstr = event.url.toLowerCase();
+      if (!eventstr.includes("/login")) {
+      // Detects the route has changed.
+         var userstr = this._service.checkCredentials(); 
+         //console.debug(userstr);
+        if (typeof userstr != 'undefined') {
+           var userJSON = JSON.parse(userstr);
+          Object.assign(this.user,userJSON);
+        }     
+     }
+    }
+  });
+  }
+
+ ngOnInit() {
+    this._service.checkCredentials(); 
+  }
+
+    logout() {
+      console.debug("logout");
+      this._service.logout();
+    }
 
 }

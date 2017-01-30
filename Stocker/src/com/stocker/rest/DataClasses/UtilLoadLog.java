@@ -23,6 +23,18 @@ public class UtilLoadLog {
 		this.stocksErrors = stocksErrors;
 		this.loadDuration = loadDuration;
 	}
+	
+	@Override
+	public String toString() {
+		return new StringBuffer("loadId : ").append(this.loadId)
+				.append("loadDateTime : ").append(this.loadDateTime)
+				.append("stocksLoaded : ").append(this.stocksLoaded)
+				.append("stocksProcessed : ").append(this.stocksProcessed)
+				.append("stocksFailed : ").append(this.stocksFailed)
+				.append("stocksErrors : ").append(this.stocksErrors)
+				.append("loadDuration : ").append(this.loadDuration)
+			    .toString();	
+	}
 
 	public String getStocksProcessed() {
 		return stocksProcessed;
@@ -46,18 +58,6 @@ public class UtilLoadLog {
 
 	public void setStocksErrors(String stocksErrors) {
 		this.stocksErrors = stocksErrors;
-	}
-
-	@Override
-	public String toString() {
-		return new StringBuffer("loadId : ").append(this.loadId)
-				.append("loadDateTime : ").append(this.loadDateTime)
-				.append("stocksLoaded : ").append(this.stocksLoaded)
-				.append("stocksProcessed : ").append(this.stocksProcessed)
-				.append("stocksFailed : ").append(this.stocksFailed)
-				.append("stocksErrors : ").append(this.stocksErrors)
-				.append("loadDuration : ").append(this.loadDuration)
-			    .toString();	
 	}
 
 	public String getLoadId() {

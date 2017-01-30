@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
+var forms_1 = require('@angular/forms');
 var app_component_1 = require('./app.component');
 var dashboard_component_1 = require('./dashboard.component');
 var portfolio_component_1 = require('./portfolio.component');
@@ -24,6 +25,8 @@ var search_pipe_1 = require('./search.pipe');
 var dropdown_component_1 = require('./dropdown.component');
 var app_routing_module_1 = require('./app-routing.module');
 var index_1 = require('./_services/index');
+var auth_private_component_1 = require('./auth.private.component');
+var auth_component_1 = require('./auth.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -32,11 +35,14 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 http_1.HttpModule,
+                forms_1.FormsModule,
                 app_routing_module_1.AppRoutingModule
             ],
             declarations: [
                 app_component_1.AppComponent,
                 dashboard_component_1.DashboardComponent,
+                auth_component_1.LoginComponent,
+                auth_private_component_1.PrivateComponent,
                 portfolio_component_1.PortfolioComponent,
                 stocklist_component_1.StockListComponent,
                 stockdetail_component_1.StockDetailComponent,

@@ -5,9 +5,15 @@ import java.util.HashMap;
 import java.util.List;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import com.stocker.rest.DataClasses.Stocks;
+import com.stocker.rest.DataClasses.User;
 import com.stocker.rest.DataClasses.UtilLoadLog;
 // Defined as a project Dependency in Java build path.
 import com.get.StockInvoker;
+import com.login.*;
+import com.mysql.jdbc.log.Log;
 
 //http://localhost:8080/Stocker/stocker/utils/invoke/dan
 
@@ -72,7 +78,28 @@ public class StockUtilRest {
 				(String) hashmapLogFile.get("duration"));
 		
 		return utilLoadLog;
-	}		
+	}	
+	
+	@GET
+	@Path("/uservalidation/{dataSelections}")
+	@Produces({ MediaType.APPLICATION_JSON })
+	public ArrayList<User> validateUserLogin(@PathParam("dataSelections") String dataSelections) {
+		System.out.println("hello");
+		UserDAO userDAO = new UserDAO();
+		return userDAO.validateLogin(dataSelections);
+	}
+
+	@POST
+	@Path("/adduser")	
+	@Consumes({ MediaType.APPLICATION_JSON })
+	@Produces({ MediaType.APPLICATION_JSON })
+	public ArrayList<User> addUserRest(User user) {
+		System.out.println("hello");
+		System.out.println(user);
+		UserDAO userDAO = new UserDAO();
+		ArrayList<User> list = userDAO.addUserPost(user);
+		return list;
+	}
 	
 }
 

@@ -4,6 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import com.stocker.rest.SqlMySQLConn;
+import com.stocker.rest.DataClasses.StockDetail;
 
 public class StockDetailLoad {
 

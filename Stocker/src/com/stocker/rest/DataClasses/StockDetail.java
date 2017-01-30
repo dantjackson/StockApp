@@ -1,4 +1,4 @@
-package com.stocker.rest;
+package com.stocker.rest.DataClasses;
 
 public class StockDetail {
 

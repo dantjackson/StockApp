@@ -4,6 +4,8 @@ import java.util.List;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
+import com.stocker.rest.DataClasses.FolioStock;
+import com.stocker.rest.DataClasses.StockDetail;
 import com.stocker.rest.DataClasses.Stocks;
 
 //http://localhost:8080/Stocker/stocker/stocks/s&s&s
@@ -26,6 +28,13 @@ public class StocksRest {
 	@Produces({ MediaType.APPLICATION_JSON })
 	public List<StockDetail> findStockDetailData(@PathParam("dataSelections") String dataSelections) {
 		return stockDetailLoad.findStockDetailData(dataSelections);
+	}
+	
+	@GET
+	@Path("/folio/{dataSelections}")
+	@Produces({ MediaType.APPLICATION_JSON })
+	public List<FolioStock> findFolioStockData(@PathParam("dataSelections") String dataSelections) {
+		return FolioLoad.findFolioStockData(dataSelections);
 	}
 	
 }
