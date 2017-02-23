@@ -1,5 +1,6 @@
 import { Component }      from '@angular/core';
-import {AuthenticationService, User} from './auth.service'
+import {AuthenticationService} from './auth.service'
+import {User} from './user'
 import { Router, NavigationStart, NavigationEnd, NavigationError, NavigationCancel, RoutesRecognized } from '@angular/router';
 
 
@@ -38,7 +39,7 @@ import { Router, NavigationStart, NavigationEnd, NavigationError, NavigationCanc
 })
 export class AppComponent {
 
-  user = new User('','');
+  user = new User('','','','','',false,'','','');
 
   constructor(
         private _service:AuthenticationService,  router: Router) {

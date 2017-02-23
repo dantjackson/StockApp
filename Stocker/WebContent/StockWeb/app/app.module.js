@@ -15,6 +15,7 @@ var forms_1 = require('@angular/forms');
 var app_component_1 = require('./app.component');
 var dashboard_component_1 = require('./dashboard.component');
 var portfolio_component_1 = require('./portfolio.component');
+var portfolio_service_1 = require('./portfolio.service');
 var util_component_1 = require('./util.component');
 var stocklist_component_1 = require('./stocklist.component');
 var stocklist_service_1 = require('./stocklist.service');
@@ -49,7 +50,7 @@ var AppModule = (function () {
                 search_box_1.SearchBox, search_name_1.SearchName, search_pipe_1.SearchPipe,
                 util_component_1.UtilComponent, dropdown_component_1.DropdownComponent
             ],
-            providers: [stocklist_service_1.StockListService, index_1.PagerService],
+            providers: [stocklist_service_1.StockListService, index_1.PagerService, portfolio_service_1.PortFolioService],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

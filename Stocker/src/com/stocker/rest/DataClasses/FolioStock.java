@@ -1,6 +1,7 @@
 package com.stocker.rest.DataClasses;
 
 import java.sql.Date;
+import java.text.DecimalFormat;
 
 public class FolioStock {
 	
@@ -13,6 +14,131 @@ public class FolioStock {
 	Double stockQty;
 	String stockCurrency;
 	Double stockPurchasePrice;
+	Double EarningsShare;
+	Double BookValue;
+	Double YearHigh;
+	Double YearLow;
+	Double ChangeFromTwoHundreddayMovingAverage;
+	Double ChangeFromFiftydayMovingAverage;
+	Double stock_bid;		
+	Double stock_ask;			
+	Double profit;
+	String fiftyDayChangePercent;
+	String twoHundredDayChangePercent;
+	String purchaseValue;
+	String currentValue;
+	
+	public String getCurrentValue() {
+		if (this.stock_bid>0 && this.stockQty > 0) {
+			Double currValueCalc = this.stock_bid * this.stockQty ;
+			DecimalFormat df = new DecimalFormat("0.#") ;
+			return df.format(currValueCalc);	
+		}
+		else 
+		{
+			return "0";
+		}			
+	}	
+	
+	public String getPurchaseValue() {
+		if (this.stockPurchasePrice>0 && this.stockQty > 0) {
+			Double PurchasePriceCalc = this.stockPurchasePrice * this.stockQty ;
+			DecimalFormat df = new DecimalFormat("0.#") ;
+			return df.format(PurchasePriceCalc);	
+		}
+		else 
+		{
+			return "0";
+		}			
+	}
+	
+	public String getFiftyDayChangePercent() {
+		if (this.ChangeFromFiftydayMovingAverage>0 && this.stock_bid>0) {
+			Double PercentCalc = ((this.ChangeFromFiftydayMovingAverage) 
+					/ this.stock_bid ) * 100;
+			DecimalFormat df = new DecimalFormat("0.##") ;
+			return df.format(PercentCalc) + "%";			
+		}
+		else 
+		{
+			return "0";
+		}		
+	}
+
+	public String getTwoHundredDayChangePercent() {
+		if (this.ChangeFromTwoHundreddayMovingAverage>0 && this.stock_bid>0) {
+			Double PercentCalc = ((this.ChangeFromTwoHundreddayMovingAverage) 
+					/ this.stock_bid ) * 100;
+			DecimalFormat df = new DecimalFormat("0.##");
+			return df.format(PercentCalc) + "%";
+		}
+		else 
+		{
+			return "0";
+		}		
+	}
+	
+	// Derived Fields
+	public Double getProfit() {
+		if (this.stockQty>0 && this.stock_ask>0) {
+			return this.stockQty * this.stock_ask;
+		}
+		else 
+		{
+			return 0.0;
+		}
+
+	}
+	
+	// Getters and Setters
+	public Double getStockBid() {
+		return stock_bid;
+	}
+	public void setStockBid(Double stock_bid) {
+		this.stock_bid = stock_bid;
+	}
+	public Double getStockAsk() {
+		return stock_ask;
+	}
+	public void setStockAsk(Double stock_ask) {
+		this.stock_ask = stock_ask;
+	}
+	public Double getEarningsShare() {
+		return EarningsShare;
+	}
+	public void setEarningsShare(Double earningsShare) {
+		EarningsShare = earningsShare;
+	}
+	public Double getBookValue() {
+		return BookValue;
+	}
+	public void setBookValue(Double bookValue) {
+		BookValue = bookValue;
+	}
+	public Double getYearHigh() {
+		return YearHigh;
+	}
+	public void setYearHigh(Double yearHigh) {
+		YearHigh = yearHigh;
+	}
+	public Double getYearLow() {
+		return YearLow;
+	}
+	public void setYearLow(Double yearLow) {
+		YearLow = yearLow;
+	}
+	public Double getChangeFromTwoHundreddayMovingAverage() {
+		return ChangeFromTwoHundreddayMovingAverage;
+	}
+	public void setChangeFromTwoHundreddayMovingAverage(Double changeFromTwoHundreddayMovingAverage) {
+		ChangeFromTwoHundreddayMovingAverage = changeFromTwoHundreddayMovingAverage;
+	}
+	public Double getChangeFromFiftydayMovingAverage() {
+		return ChangeFromFiftydayMovingAverage;
+	}
+	public void setChangeFromFiftydayMovingAverage(Double changeFromFiftydayMovingAverage) {
+		ChangeFromFiftydayMovingAverage = changeFromFiftydayMovingAverage;
+	}
 	public String getUserName() {
 		return userName;
 	}

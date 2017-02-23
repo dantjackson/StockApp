@@ -10,12 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var auth_service_1 = require('./auth.service');
+var user_1 = require('./user');
 var router_1 = require('@angular/router');
 var AppComponent = (function () {
     function AppComponent(_service, router) {
         var _this = this;
         this._service = _service;
-        this.user = new auth_service_1.User('', '');
+        this.user = new user_1.User('', '', '', '', '', false, '', '', '');
         router.events.forEach(function (event) {
             if (event instanceof router_1.NavigationStart) {
                 //console.debug("Route Changed");

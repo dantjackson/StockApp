@@ -260,7 +260,7 @@ public class StockWorkerThread implements Runnable {
 
 		try {
 			pstmt = wrtCon.prepareStatement(InsrtSql);
-			wrtCon.setAutoCommit(true);
+			wrtCon.setAutoCommit(false);
 			pstmt.setString(1, StockId);
 			
 			// Added a 5.5 Mysql there is no default for date allowed.
@@ -298,10 +298,13 @@ public class StockWorkerThread implements Runnable {
 
 			pstmt.addBatch();
 			pstmt.executeBatch();
+			
 			LOG.info("LoadedToDB:" + StockId);
 		} catch (Exception sqle) {
 			LOG.error("FailedToLoadToDB:" + StockId + " Error:" + sqle.getMessage());
 			throw sqle;
+		} finally {
+			wrtCon.commit();
 		}
 	}
 

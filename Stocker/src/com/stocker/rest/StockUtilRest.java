@@ -94,7 +94,6 @@ public class StockUtilRest {
 	@Consumes({ MediaType.APPLICATION_JSON })
 	@Produces({ MediaType.APPLICATION_JSON })
 	public ArrayList<User> addUserRest(User user) {
-		System.out.println("hello");
 		System.out.println(user);
 		UserDAO userDAO = new UserDAO();
 		ArrayList<User> list = userDAO.addUserPost(user);

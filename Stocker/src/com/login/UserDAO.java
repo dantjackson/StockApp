@@ -27,9 +27,23 @@ public class UserDAO {
 			// Check User Does Not ALready Exist
 			
 			// Invoke add user
-			addUser(user);
-			// Invoke validate login return user and session in class.
-			return validateLogin(user.getEmail() + "," + user.getPassword());
+			boolean addUserResult = addUser(user);
+			
+			if (addUserResult) {
+				// Invoke validate login return user and session in class.
+				ArrayList<User> userArray = validateLogin(user.getEmail() + "," + user.getPassword());
+				User userAdd = userArray.get(0);
+				userAdd.setUserMessage("Created New User");
+				return userArray;
+			}
+			else {
+				User userFail = new User();
+				userFail.setUserMessage("User Exists Already");
+				ArrayList<User> userFailArray = new ArrayList<User>() ;
+				userFailArray.add(userFail);
+				return userFailArray;
+			}
+			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -46,6 +60,14 @@ public class UserDAO {
 		// Write User Details to DB
 		Connection con = null;
 		
+		//  Check User Doesn't Already exist DAN DAN DAN 
+		ArrayList<User> userExists = validateLogin(user.getEmail()+","+"dummypass");
+		
+		if (!userExists.get(0).getUserMessage().equals("A User Does Not Exist For This Email Address!")) {
+			System.out.println("User Exists"+userExists.size());
+			return false;
+		}
+		
 		String InsrtSql = "INSERT INTO hokus.hk_user "
 				+ " (user_first_name, user_last_name, user_title, user_pass, user_email, "
 				+ " user_last_login ) "
@@ -55,7 +77,7 @@ public class UserDAO {
 		try {
 			con = SqlMySQLConn.getConnection();
 			pstmt = con.prepareStatement(InsrtSql);
-			con.setAutoCommit(true);
+			con.setAutoCommit(false);
 			
 			pstmt.setString(1, user.getUserFirstName() );
 			pstmt.setString(2, user.getUserLastName() );
@@ -72,6 +94,7 @@ public class UserDAO {
 
 			pstmt.addBatch();
 			pstmt.executeBatch();
+			con.commit();
 
 		} catch (Exception sqle) {
 			throw sqle;
@@ -130,7 +153,7 @@ public class UserDAO {
 		String DBHashedPassword = list.get(0).getPassword();
 		String saltKey = DBHashedPassword.split(",")[1];
 		
-		// Call password hash utility with password supplied and DB salk key.
+		// Call password hash utility with password supplied and DB salt key.
 		String GenHashedPassword = PasswordHash(password, saltKey);
 		if (!GenHashedPassword.equals(DBHashedPassword)) {
 			System.out.println("The Password You Have Entered Is Incorrect!");

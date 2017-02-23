@@ -6,7 +6,9 @@ import { FormsModule }   from '@angular/forms';
 
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard.component';
+
 import { PortfolioComponent }   from './portfolio.component';
+import { PortFolioService}   from './portfolio.service';
 
 import { UtilComponent }   from './util.component';
 
@@ -26,6 +28,7 @@ import { PagerService } from './_services/index';
 import { PrivateComponent }     from './auth.private.component'
 import { LoginComponent }       from './auth.component'
 
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -44,7 +47,7 @@ import { LoginComponent }       from './auth.component'
     SearchBox,SearchName,SearchPipe,
     UtilComponent, DropdownComponent
   ],
-  providers: [ StockListService, PagerService ],
+  providers: [ StockListService, PagerService, PortFolioService ],
   bootstrap: [ AppComponent]
 })
 export class AppModule { }

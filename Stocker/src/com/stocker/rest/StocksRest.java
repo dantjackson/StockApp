@@ -1,12 +1,16 @@
 package com.stocker.rest;
 
+import java.util.ArrayList;
 import java.util.List;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
+import com.login.UserDAO;
+import com.stocker.rest.DataClasses.AddStock;
 import com.stocker.rest.DataClasses.FolioStock;
 import com.stocker.rest.DataClasses.StockDetail;
 import com.stocker.rest.DataClasses.Stocks;
+import com.stocker.rest.DataClasses.User;
 
 //http://localhost:8080/Stocker/stocker/stocks/s&s&s
 
@@ -35,6 +39,16 @@ public class StocksRest {
 	@Produces({ MediaType.APPLICATION_JSON })
 	public List<FolioStock> findFolioStockData(@PathParam("dataSelections") String dataSelections) {
 		return FolioLoad.findFolioStockData(dataSelections);
+	}
+	
+	@POST
+	@Path("/folio/addstock")	
+	@Consumes({ MediaType.APPLICATION_JSON })
+	@Produces({ MediaType.APPLICATION_JSON })
+	public ArrayList<AddStock> addUserRest(AddStock addstock) {
+		System.out.println(addstock);
+		ArrayList<AddStock> list = FolioLoad.addStockToFolio(addstock);
+		return list;
 	}
 	
 }

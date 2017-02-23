@@ -31,6 +31,7 @@ public class StockInvoker {
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("ddMMyy-HHmmss");
 		LocalDateTime localDateTime = LocalDateTime.now();
 		logFileFormat = "StockReaderLog-" + dtf.format(localDateTime).toString();
+
 		
 		MDC.put("logFileName", logFileFormat);
 		StockInvoker si = new StockInvoker();
@@ -117,6 +118,7 @@ public class StockInvoker {
 
 		try {
 			this.con = SqlMySQLConn.getConnection();
+			this.con.setAutoCommit(false);
 			Statement stmt = this.con.createStatement();
 			ResultSet rs = stmt.executeQuery(query);
 			while (rs.next()) {

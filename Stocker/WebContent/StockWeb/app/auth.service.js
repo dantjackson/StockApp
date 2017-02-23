@@ -9,37 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var user_1 = require('./user');
 var router_1 = require('@angular/router');
 var http_1 = require('@angular/http');
-var User = (function () {
-    function User(email, password) {
-        this.email = email;
-        this.password = password;
-    }
-    return User;
-}());
-exports.User = User;
+var Observable_1 = require('rxjs/Observable');
 var users = [
-    new User('admin@admin.com', 'welcome1'),
-    new User('test@gmail.com', 'welcome1')
+    new user_1.User('admin@admin.com', 'welcome1', '', '', '', false, '', '', ''),
+    new user_1.User('test@gmail.com', 'welcome1', '', '', '', false, '', '', '')
 ];
 var AuthenticationService = (function () {
     function AuthenticationService(_router, _http) {
         this._router = _router;
         this._http = _http;
+        this.userLoginUri = "http://localhost:8080/Stocker/stocker/utils/uservalidation/";
+        this.postCreateUserUri = "http://localhost:8080/Stocker/stocker/utils/adduser";
     }
     AuthenticationService.prototype.logout = function () {
         localStorage.removeItem("user");
         this._router.navigate(['login']);
     };
     AuthenticationService.prototype.login = function (user) {
-        var authenticatedUser = users.find(function (u) { return u.email === user.email; });
-        if (authenticatedUser && authenticatedUser.password === user.password) {
-            localStorage.setItem("user", JSON.stringify(authenticatedUser));
-            this._router.navigate(['dashboard']);
-            return true;
-        }
-        return false;
+        localStorage.setItem("user", JSON.stringify(user.email));
+        this._router.navigate(['dashboard']);
+        return true;
     };
     AuthenticationService.prototype.checkCredentials = function () {
         if (localStorage.getItem("user") === null) {
@@ -50,13 +42,21 @@ var AuthenticationService = (function () {
             return localStorage.getItem("user");
         }
     };
-    AuthenticationService.prototype.addUserPost = function () {
-        var json = JSON.stringify({ "userFirstName": 'Dan',
-            userLastName: 'J', userTitle: 'Mr', password: '1234', email: '123@123.com', sessionID: '123' });
+    AuthenticationService.prototype.handleError = function (error) {
+        console.error('An error occurred', error); // for demo purposes only
+        return Observable_1.Observable.throw(error.message || error);
+    };
+    AuthenticationService.prototype.getUser = function (user) {
+        return this._http.get(this.userLoginUri + user.email + "," + user.password)
+            .map(function (res) { return res.json(); });
+    };
+    AuthenticationService.prototype.addUserPost = function (user) {
+        var json = JSON.stringify({ "userFirstName": user.userFirstName,
+            userLastName: user.userLastName, userTitle: user.userTitle, password: user.password, email: user.email, sessionID: '123' });
         console.debug("Params");
         var headers = new http_1.Headers();
         headers.append('Content-Type', 'application/json');
-        return this._http.post('http://localhost:8080/Stocker/stocker/utils/adduser', json, { headers: headers })
+        return this._http.post(this.postCreateUserUri, json, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthenticationService = __decorate([
