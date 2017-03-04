@@ -17,4 +17,5 @@ export class Portfolio {
 	stockBid: string;
 	stockAsk: string;
   profit: string;
+  stockName: string;
 }

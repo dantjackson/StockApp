@@ -21,7 +21,7 @@ public class StockInvoker {
 	static final Logger LOG = LoggerFactory.getLogger(StockInvoker.class);
 
 	ArrayList<String> stocks;
-	Integer symbolperthread = 6;
+	Integer symbolperthread = 20;
 	public Connection con;
 
 	public String invoke() {

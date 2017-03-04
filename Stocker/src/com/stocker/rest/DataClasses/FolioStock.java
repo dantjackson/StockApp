@@ -22,15 +22,24 @@ public class FolioStock {
 	Double ChangeFromFiftydayMovingAverage;
 	Double stock_bid;		
 	Double stock_ask;			
-	Double profit;
+	String profit;
 	String fiftyDayChangePercent;
 	String twoHundredDayChangePercent;
 	String purchaseValue;
 	String currentValue;
+	String stockName;
 	
+	public String getStockName() {
+		return stockName;
+	}
+
+	public void setStockName(String stockName) {
+		this.stockName = stockName;
+	}
+
 	public String getCurrentValue() {
 		if (this.stock_bid>0 && this.stockQty > 0) {
-			Double currValueCalc = this.stock_bid * this.stockQty ;
+			Double currValueCalc = (this.stock_bid/100) * this.stockQty ;
 			DecimalFormat df = new DecimalFormat("0.#") ;
 			return df.format(currValueCalc);	
 		}
@@ -42,7 +51,7 @@ public class FolioStock {
 	
 	public String getPurchaseValue() {
 		if (this.stockPurchasePrice>0 && this.stockQty > 0) {
-			Double PurchasePriceCalc = this.stockPurchasePrice * this.stockQty ;
+			Double PurchasePriceCalc = (this.stockPurchasePrice/100) * this.stockQty ;
 			DecimalFormat df = new DecimalFormat("0.#") ;
 			return df.format(PurchasePriceCalc);	
 		}
@@ -79,13 +88,16 @@ public class FolioStock {
 	}
 	
 	// Derived Fields
-	public Double getProfit() {
-		if (this.stockQty>0 && this.stock_ask>0) {
-			return this.stockQty * this.stock_ask;
+	public String getProfit() {
+		if (this.stockQty>0 && this.stock_ask>0 && this.stockPurchasePrice>0) {
+			Double profit = ((this.stockPurchasePrice/100) * this.stockQty) - 
+					(this.stockQty * (this.stock_ask/100));
+			DecimalFormat df = new DecimalFormat("0.##");
+			return df.format(profit);
 		}
 		else 
 		{
-			return 0.0;
+			return "0.0";
 		}
 
 	}

@@ -92,6 +92,7 @@ public class FolioLoad {
 		dataresults.setFolioCreatedDate(rs.getDate("folio_created_date"));
 		dataresults.setStockCurrency(rs.getString("stock_currency"));
 		dataresults.setStockId(rs.getString("stock_id"));
+		dataresults.setStockName(rs.getString("stock_name"));
 		dataresults.setStockQty(rs.getDouble("stock_qty"));
 		dataresults.setStockPurchasePrice(rs.getDouble("stock_purchase_price"));			
 		
