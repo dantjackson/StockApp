@@ -38,6 +38,9 @@ public class FolioStock {
 	}
 
 	public String getCurrentValue() {
+		if (this.currentValue!=null) {
+			return currentValue;
+		}
 		if (this.stock_bid>0 && this.stockQty > 0) {
 			Double currValueCalc = (this.stock_bid/100) * this.stockQty ;
 			DecimalFormat df = new DecimalFormat("0.#") ;
@@ -50,6 +53,9 @@ public class FolioStock {
 	}	
 	
 	public String getPurchaseValue() {
+		if (this.purchaseValue!=null) {
+			return purchaseValue;
+		}	
 		if (this.stockPurchasePrice>0 && this.stockQty > 0) {
 			Double PurchasePriceCalc = (this.stockPurchasePrice/100) * this.stockQty ;
 			DecimalFormat df = new DecimalFormat("0.#") ;
@@ -62,6 +68,9 @@ public class FolioStock {
 	}
 	
 	public String getFiftyDayChangePercent() {
+		if (this.stock_bid==null) {
+			return null;
+		}		
 		if (this.ChangeFromFiftydayMovingAverage>0 && this.stock_bid>0) {
 			Double PercentCalc = ((this.ChangeFromFiftydayMovingAverage) 
 					/ this.stock_bid ) * 100;
@@ -75,6 +84,9 @@ public class FolioStock {
 	}
 
 	public String getTwoHundredDayChangePercent() {
+		if (this.stock_bid==null) {
+			return null;
+		}
 		if (this.ChangeFromTwoHundreddayMovingAverage>0 && this.stock_bid>0) {
 			Double PercentCalc = ((this.ChangeFromTwoHundreddayMovingAverage) 
 					/ this.stock_bid ) * 100;
@@ -89,9 +101,12 @@ public class FolioStock {
 	
 	// Derived Fields
 	public String getProfit() {
+		if (this.profit!=null) {
+			return profit;
+		}
 		if (this.stockQty>0 && this.stock_ask>0 && this.stockPurchasePrice>0) {
-			Double profit = ((this.stockPurchasePrice/100) * this.stockQty) - 
-					(this.stockQty * (this.stock_ask/100));
+			Double profit = ((this.stockQty * (this.stock_ask/100) - 
+						(this.stockPurchasePrice/100) * this.stockQty));
 			DecimalFormat df = new DecimalFormat("0.##");
 			return df.format(profit);
 		}
@@ -205,6 +220,16 @@ public class FolioStock {
 	public void setStockPurchasePrice(Double stockPurchasePrice) {
 		this.stockPurchasePrice = stockPurchasePrice;
 	}
+	public void setProfit(String profit) {
+		this.profit = profit;
+	}
+	public void setPurchaseValue(String purchaseValue) {
+		this.purchaseValue = purchaseValue;
+	}
+
+	public void setCurrentValue(String currentValue) {
+		this.currentValue = currentValue;
+	}	
 	
 	
 	

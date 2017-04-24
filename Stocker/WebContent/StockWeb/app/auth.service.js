@@ -8,11 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var user_1 = require('./user');
-var router_1 = require('@angular/router');
-var http_1 = require('@angular/http');
-var Observable_1 = require('rxjs/Observable');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var user_1 = require("./user");
+var router_1 = require("@angular/router");
+var http_1 = require("@angular/http");
+var Observable_1 = require("rxjs/Observable");
 var users = [
     new user_1.User('admin@admin.com', 'welcome1', '', '', '', false, '', '', ''),
     new user_1.User('test@gmail.com', 'welcome1', '', '', '', false, '', '', '')
@@ -59,11 +60,11 @@ var AuthenticationService = (function () {
         return this._http.post(this.postCreateUserUri, json, { headers: headers })
             .map(function (res) { return res.json(); });
     };
-    AuthenticationService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [router_1.Router, http_1.Http])
-    ], AuthenticationService);
     return AuthenticationService;
 }());
+AuthenticationService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [router_1.Router, http_1.Http])
+], AuthenticationService);
 exports.AuthenticationService = AuthenticationService;
 //# sourceMappingURL=auth.service.js.map

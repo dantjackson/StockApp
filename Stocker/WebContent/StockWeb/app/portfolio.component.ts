@@ -1,6 +1,10 @@
-import {Component, Input, Output, EventEmitter} from '@angular/core';
-import { PortFolioService , AddStock}   from './portfolio.service';
+import {Component, Input, Output, OnInit, EventEmitter,Directive} from '@angular/core';
+import { PortFolioService , AddStock, Perf}   from './portfolio.service';
 import { Portfolio }   from './portfolio';
+import {GoogleChartComponent} from './GoogleChartComponent';
+declare var google:any;
+declare var googleLoaded:any;
+
 
 @Component({
   selector: 'portfolio',
@@ -28,7 +32,13 @@ import { Portfolio }   from './portfolio';
     </tr>
   </thead>
   <template ngFor let-portfolio [ngForOf]="portfolios" let-i="index" [ngForTrackBy]="trackByFn">
-    <tr class="text-black" style="background-color:skyblue;border-bottom:3pt solid white;" >
+ 
+
+    <tr *ngIf="portfolio.stockId == 'TOTAL'" colspan="16" class="text-black" style="background-color:#4863A0;border-bottom:3pt solid white;" >
+      <td colspan="16" style="font-weight:bold;font-color:white;color:white;">&nbsp;{{portfolio.stockName}}</td>
+    </tr>  
+
+    <tr *ngIf="portfolio.stockId != 'TOTAL'"class="text-black" style="background-color:skyblue;border-bottom:3pt solid white;" >
       <td colspan="10" style="font-weight:bold;font-color:black;">&nbsp;{{portfolio.stockName}} ({{portfolio.stockId}})</td>
       <td colspan="2"><a href="#">View</a>
           <button class="btn btn-sm btn-primary" (click)="viewStockClick()" type="button"> <span class="glyphicon glyphicon-stats"></span> </button>      
@@ -39,7 +49,8 @@ import { Portfolio }   from './portfolio';
       <td colspan="2"><a href="#">Delete</a>
           <button class="btn btn-sm btn-danger" (click)="deleteStockClick()" type="button"> <span class="glyphicon glyphicon-trash"></span> </button>    
       </td> 
-    </tr>   
+    </tr>  
+
     <tr class="text-black" style="background-color: rgba(133, 193, 233, 0.3);border-bottom:3pt solid white;" >
       <td class="col-md-1" style="border-right:2pt solid white;">{{portfolio.stockQty}}</td>
       <td class="col-md-1" style="border-right:2pt solid white;">{{portfolio.stockCurrency}}</td>
@@ -48,7 +59,11 @@ import { Portfolio }   from './portfolio';
       <td class="col-md-1" style="border-right:2pt solid white;">{{portfolio.stockBid}}</td>
       <td class="col-md-1" style="border-right:2pt solid white;">{{portfolio.stockAsk}}</td> 
       <td class="col-md-1" style="border-right:2pt solid white;">{{portfolio.currentValue}}</td>    
-      <td class="col-md-1" style="border-right:2pt solid white;">{{portfolio.profit}}</td> 
+      
+       
+      <td *ngIf="portfolio.profit>= 0" class="col-md-1" style="color:green;border-right:2pt solid white;">{{portfolio.profit}}</td> 
+      <td *ngIf="portfolio.profit< 0" class="col-md-1" style="color:red;border-right:2pt solid white;">{{portfolio.profit}}</td> 
+
       <td class="col-md-1" style="border-right:2pt solid white;text-align: center;vertical-align: middle;">{{portfolio.changeFromFiftydayMovingAverage}}</td>    
       <td class="col-md-1" style="border-right:2pt solid white;text-align: center;vertical-align: middle;">{{portfolio.fiftyDayChangePercent}}</td> 
       <td class="col-md-1" style="border-right:2pt solid white;">{{portfolio.changeFromTwoHundreddayMovingAverage}}</td>
@@ -102,17 +117,28 @@ import { Portfolio }   from './portfolio';
             </tr>
         </table>   
    </div>     
+
+   <div id="line_chart" [chartData]="line_ChartData" [chartOptions]= "line_ChartOptions" chartType="LineChart" GoogleChart></div>
+   <div id="line_chart" [chartData]="arr" [chartOptions]= "line_ChartOptions" chartType="LineChart" GoogleChart></div>
+
+
 `
 })
 
-export class PortfolioComponent { 
+
+export class PortfolioComponent implements OnInit{ 
  
     portfolios: Portfolio[];  
+    perf: Perf[];
+    out: any[] = [];
+    
     showaddoptions: boolean = false;
     showAddStockMessage: boolean = false;
     public addStockMessage: string;
     public addStock = new AddStock('','','',false,'');
     public retAddStock = new AddStock('','','',false,'');
+    public arr;
+;
    
     constructor(private portFolioService: PortFolioService) {}
 
@@ -120,6 +146,13 @@ export class PortfolioComponent {
           this.portFolioService.getPortFoliosSvc(arg)
               .subscribe(portfolios => this.portfolios = portfolios);
     }    
+
+    getFolioPerf(arg) {
+          this.portFolioService.getFolioPerf(arg)
+              .subscribe(perf => this.perf = perf, 
+              error => alert(error),
+              ()=>this.runPerf());
+    }        
 
     addStockClick() { 
       console.log("Add Stock");
@@ -135,6 +168,84 @@ export class PortfolioComponent {
                 () =>this.validateStockPostLoad()
             );
     }
+
+   runPerf() {
+     console.log("hello");
+     var jsonAsArray = Object.values(this.perf);
+     var distDatesArr : Date[] = [];
+     var titleArr : string[] = [];
+     var iter : number = 0;
+
+     // Get distinct list of Dates
+     for (let i of jsonAsArray) {
+       var danvar = Object.values(i);
+       iter = 0;
+       for (let z of danvar) {
+         iter ++;
+         if (distDatesArr.indexOf(z.toString()) == -1 && iter==1) {
+          //distDatesArr.push(z.toString());
+          var dateStrDay = +z.toString().substring(1,2);
+          var dateStrMonth = +z.toString().substring(3,5);
+          var dateStrYear = +z.toString().substring(6,8) + 2000;
+          console.log(dateStrDay); 
+          console.log(dateStrMonth); 
+          console.log(dateStrYear); 
+
+          var dateVar = new Date(dateStrYear, dateStrMonth, dateStrDay);
+          console.log(dateStrYear.toString()); 
+          distDatesArr.push(dateVar);
+         }
+       }  
+     }  
+     console.log(distDatesArr);
+
+     // Get list of stocks and add each plus date to title array.
+     titleArr.push("Date");
+     for (let i of jsonAsArray) {
+       var danvar = Object.values(i);
+       iter = 0;
+       for (let z of danvar) {
+         iter ++;
+         if (titleArr.indexOf(z.toString()) == -1 && iter==3) {
+          titleArr.push(z.toString());
+         }
+       }  
+     }  
+     console.log(titleArr);     
+
+     // Loop each distinct date and each stock.  Add entry for each
+     var endArrayVar : any[] = [];
+     endArrayVar.push(titleArr);
+
+     for (let dateIter of distDatesArr) {
+       var rowArrayVar : any[] = [];
+       rowArrayVar.push(dateIter);
+       for   (let titleIter of titleArr) {
+            var subinZeroVal : boolean = true;
+            
+            for (let topArrayObj of jsonAsArray) {
+              var topArr = Object.values(topArrayObj);
+
+              if (topArr[0].toString()==dateIter.toString() && topArr[2].toString()==titleIter.toString()  ) {
+                 rowArrayVar.push(topArr[1]);  
+                 subinZeroVal = false;
+                 console.log("Here");
+              } 
+            }  
+       // Sub in a row if no match
+       if (subinZeroVal==true  && titleIter!="Date") {
+          rowArrayVar.push(0);   
+       } 
+
+       } // for   
+       endArrayVar.push(rowArrayVar);
+     }
+     
+   console.log(endArrayVar);  
+   //this.arr = new google.visualization.DataTable(this.out);
+   this.arr = endArrayVar;
+
+   }
 
     validateStockPostLoad() {
       
@@ -156,6 +267,36 @@ export class PortfolioComponent {
     // initialize to page 1
     this.getPortfolios("");
     console.log(this.portfolios);  
+    this.getFolioPerf("");
+    console.log(this.perf);      
+    
   }
+
+  public pie_ChartData = [
+    ['Task', 'Hours per Day'],
+    ['Work', 11],
+    ['Eat', 2],
+    ['Commute', 2],
+    ['Watch TV', 2],
+    ['Sleep', 7]];
+
+    public line_ChartData = [
+      ['Date', 'Barc', 'India', 'Thai'],
+        ["04-11-17",24,33,439.75],
+        ["04-11-18",22,33,439.75]];
+
+    public line_ChartOptions = {
+        title: 'Company Performance',
+        curveType: 'function',
+        legend: {
+            position: 'bottom'
+        }
+    };
+
+  public pie_ChartOptions  = {
+    title: 'My Daily Activities',
+    width: 900,
+    height: 500
+  };
 
 }

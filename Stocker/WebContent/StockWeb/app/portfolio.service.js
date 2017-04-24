@@ -8,10 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
-require('rxjs/add/operator/toPromise');
-var Observable_1 = require('rxjs/Observable');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var http_1 = require("@angular/http");
+require("rxjs/add/operator/toPromise");
+var Observable_1 = require("rxjs/Observable");
 var AddStock = (function () {
     function AddStock(stockId, stockPrice, stockQty, stockAdded, stockMessage) {
         this.stockId = stockId;
@@ -20,22 +21,37 @@ var AddStock = (function () {
         this.stockAdded = stockAdded;
         this.stockMessage = stockMessage;
     }
-    AddStock = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [String, String, String, Boolean, String])
-    ], AddStock);
     return AddStock;
 }());
+AddStock = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [String, String, String, Boolean, String])
+], AddStock);
 exports.AddStock = AddStock;
+var Perf = (function () {
+    function Perf() {
+    }
+    return Perf;
+}());
+Perf = __decorate([
+    core_1.Injectable()
+], Perf);
+exports.Perf = Perf;
 var PortFolioService = (function () {
     function PortFolioService(http) {
         this.http = http;
         this.headers = new http_1.Headers({ 'Content-Type': 'application/json' });
         this.stockUrl = 'http://localhost:8080/Stocker/stocker/stocks/folio/1'; // URL to web api
         this.postAddStockUri = "http://localhost:8080/Stocker/stocker/stocks/folio/addstock";
+        this.stockPerfUrl = 'http://localhost:8080/Stocker/stocker/stocks/folio/perfbytime/12'; // URL to web api
     }
     PortFolioService.prototype.getPortFoliosSvc = function (arg) {
         return this.http.get(this.stockUrl + arg)
+            .catch(this.handleError)
+            .map(this.extractData);
+    };
+    PortFolioService.prototype.getFolioPerf = function (arg) {
+        return this.http.get(this.stockPerfUrl + arg)
             .catch(this.handleError)
             .map(this.extractData);
     };
@@ -59,11 +75,11 @@ var PortFolioService = (function () {
         return this.http.post(this.postAddStockUri, json, { headers: headers })
             .map(function (res) { return res.json(); });
     };
-    PortFolioService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], PortFolioService);
     return PortFolioService;
 }());
+PortFolioService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], PortFolioService);
 exports.PortFolioService = PortFolioService;
 //# sourceMappingURL=portfolio.service.js.map

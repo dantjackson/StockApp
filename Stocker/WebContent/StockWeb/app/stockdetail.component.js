@@ -8,11 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var core_2 = require('@angular/core');
-require('rxjs/Rx');
-var stockdetail_1 = require('./stockdetail');
-var stockdetail_service_1 = require('./stockdetail.service');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var core_2 = require("@angular/core");
+require("rxjs/Rx");
+var stockdetail_1 = require("./stockdetail");
+var stockdetail_service_1 = require("./stockdetail.service");
 var StockDetailComponent = (function () {
     function StockDetailComponent(stockDetailService) {
         this.stockDetailService = stockDetailService;
@@ -33,16 +34,16 @@ var StockDetailComponent = (function () {
     StockDetailComponent.prototype.ngOnInit = function () {
         // Add here
     };
-    StockDetailComponent = __decorate([
-        core_2.Injectable(),
-        core_1.Component({
-            selector: 'stock-detail',
-            providers: [stockdetail_service_1.StockDetailService],
-            template: "\n  <div class=\"panel panel-default\">\n    <div *ngIf=\"!selstockdetail\" class=\"panel-heading\">\n      <h3 class=\"panel-title\">{{message}}</h3>\n    </div>\n    <div *ngIf=\"selstockdetail\" class=\"panel-heading\">\n      <h3 class=\"panel-title\">{{selstockdetail.stockName}} {{selstockdetail.stockName}}</h3>\n    </div>\n    <ul class=\"list-group\" *ngIf=\"selstockdetail\">\n      <li class=\"list-group-item\">\n        <h4 class=\"list-group-item-heading\">Stock Id</h4>\n        <p class=\"list-group-item-text\">{{selstockdetail.stockId}}</p>\n      </li>\n      <li class=\"list-group-item\">\n        <h4 class=\"list-group-item-heading\">Stock Name</h4>\n        <p class=\"list-group-item-text\">{{selstockdetail.stockName}}</p>\n      </li>\n      <li class=\"list-group-item\">\n        <h4 class=\"list-group-item-heading\">Stock High</h4>\n        <p class=\"list-group-item-text\">{{selstockdetail.stockYearHigh}}</p>\n      </li>\n      <li class=\"list-group-item\">\n        <h4 class=\"list-group-item-heading\">Stock Low</h4>\n        <p class=\"list-group-item-text\">{{selstockdetail.stockYearLow}}</p>\n      </li>      \n  </ul>\n  </div>\n  "
-        }), 
-        __metadata('design:paramtypes', [stockdetail_service_1.StockDetailService])
-    ], StockDetailComponent);
     return StockDetailComponent;
 }());
+StockDetailComponent = __decorate([
+    core_2.Injectable(),
+    core_1.Component({
+        selector: 'stock-detail',
+        providers: [stockdetail_service_1.StockDetailService],
+        template: "\n  <div class=\"panel panel-default\">\n    <div *ngIf=\"!selstockdetail\" class=\"panel-heading\">\n      <h3 class=\"panel-title\">{{message}}</h3>\n    </div>\n    <div *ngIf=\"selstockdetail\" class=\"panel-heading\">\n      <h3 class=\"panel-title\">{{selstockdetail.stockName}} {{selstockdetail.stockName}}</h3>\n    </div>\n    <ul class=\"list-group\" *ngIf=\"selstockdetail\">\n      <li class=\"list-group-item\">\n        <h4 class=\"list-group-item-heading\">Stock Id</h4>\n        <p class=\"list-group-item-text\">{{selstockdetail.stockId}}</p>\n      </li>\n      <li class=\"list-group-item\">\n        <h4 class=\"list-group-item-heading\">Stock Name</h4>\n        <p class=\"list-group-item-text\">{{selstockdetail.stockName}}</p>\n      </li>\n      <li class=\"list-group-item\">\n        <h4 class=\"list-group-item-heading\">Stock High</h4>\n        <p class=\"list-group-item-text\">{{selstockdetail.stockYearHigh}}</p>\n      </li>\n      <li class=\"list-group-item\">\n        <h4 class=\"list-group-item-heading\">Stock Low</h4>\n        <p class=\"list-group-item-text\">{{selstockdetail.stockYearLow}}</p>\n      </li>      \n  </ul>\n  </div>\n  "
+    }),
+    __metadata("design:paramtypes", [stockdetail_service_1.StockDetailService])
+], StockDetailComponent);
 exports.StockDetailComponent = StockDetailComponent;
 //# sourceMappingURL=stockdetail.component.js.map

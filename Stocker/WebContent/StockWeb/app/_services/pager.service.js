@@ -1,5 +1,6 @@
 "use strict";
-var _ = require('underscore');
+Object.defineProperty(exports, "__esModule", { value: true });
+var _ = require("underscore");
 var PagerService = (function () {
     function PagerService() {
     }

@@ -8,6 +8,7 @@ import javax.ws.rs.core.MediaType;
 import com.login.UserDAO;
 import com.stocker.rest.DataClasses.AddStock;
 import com.stocker.rest.DataClasses.FolioStock;
+import com.stocker.rest.DataClasses.StockByTime;
 import com.stocker.rest.DataClasses.StockDetail;
 import com.stocker.rest.DataClasses.Stocks;
 import com.stocker.rest.DataClasses.User;
@@ -40,6 +41,13 @@ public class StocksRest {
 	public List<FolioStock> findFolioStockData(@PathParam("dataSelections") String dataSelections) {
 		return FolioLoad.findFolioStockData(dataSelections);
 	}
+
+	@GET
+	@Path("/folio/perfbytime/{dataSelections}")
+	@Produces({ MediaType.APPLICATION_JSON })
+	public List<StockByTime> findFolioPerfByTime(@PathParam("dataSelections") String dataSelections) {
+		return FolioLoad.findFolioPerfByTime(dataSelections);
+	}	
 	
 	@POST
 	@Path("/folio/addstock")	

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stocker</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="/css/app.css">
 
     <!-- 1. Load libraries -->
@@ -15,8 +16,15 @@
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
+    
+    <!-- 2. Google Charts JS -->
+     <script src="https://www.gstatic.com/charts/loader.js"></script>
+     <script type="text/javascript">
+     // Load the Visualization API and the corechart package.
+    google.charts.load('current', {'packages':['corechart']});
+    </script>
 
-    <!-- 2. Configure SystemJS -->
+    <!-- 3. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
     <script>
       System.import('app').catch(function(err){ console.error(err); });

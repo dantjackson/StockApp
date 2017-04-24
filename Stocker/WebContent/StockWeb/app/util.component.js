@@ -8,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var http_1 = require("@angular/http");
 var UtilComponent = (function () {
     function UtilComponent(http) {
         this.http = http;
@@ -67,14 +68,14 @@ var UtilComponent = (function () {
     UtilComponent.prototype.toggleLoadingGIF = function (loading) {
         this.loadingGIF = loading;
     };
-    UtilComponent = __decorate([
-        core_1.Component({
-            selector: 'my-util',
-            template: "<h3 class=\"header\">Utilities</h3>\n               <div class=\"row\">\n                 <button class=\"btn btn-success\" (click)=\"import()\">Run Import</button>\n                 <button class=\"btn btn-info\" (click)=\"viewlogs()\">View Import Logs</button>\n                 <button class=\"btn btn-primary\" (click)=\"viewdata()\">View Import Data</button>\n               </div>\n               <div style=\"margin-top:15px\"></div>\n\n               <div *ngIf=\"showdropdown\" class=\"row\">\n                 <dropdown [values]=\"dropdownValues\" (select)=\"action($event)\"></dropdown>\n               </div> \n               \n               <div style=\"margin-top:15px\"></div>\n               <div *ngIf=\"loadres\" class=\"panel panel-default\">\n                <div *ngIf=\"loadres\" class=\"panel-heading\">\n                  <h3 class=\"panel-title\">{{loadres.loadId}}</h3>\n                </div>\n                <ul class=\"list-group\" *ngIf=\"loadres\">\n                  <li class=\"list-group-item\">\n                    <h4 class=\"list-group-item-heading\">Stocks Processed</h4>\n                    <p class=\"list-group-item-text\">{{loadres.stocksProcessed}}</p>\n                  </li>\n                  <li class=\"list-group-item\">\n                    <h4 class=\"list-group-item-heading\">Stocks Loaded</h4>\n                    <p class=\"list-group-item-text\">{{loadres.stocksLoaded}}</p>\n                  </li>\n                  <li class=\"list-group-item\">\n                    <h4 class=\"list-group-item-heading\">Stocks Failed</h4>\n                    <p class=\"list-group-item-text\">{{loadres.stocksFailed}}</p>\n                  </li>\n                  <li class=\"list-group-item\">\n                    <h4 class=\"list-group-item-heading\">Stock Errors</h4>\n                    <p class=\"list-group-item-text\">{{loadres.stocksErrors}}</p>\n                  </li>      \n                  <li class=\"list-group-item\">\n                    <h4 class=\"list-group-item-heading\">Stock Duration</h4>\n                    <p class=\"list-group-item-text\">{{loadres.loadDuration}}</p>\n                  </li>                        \n              </ul>\n              </div>            \n              <div *ngIf=\"loadingGIF\" class=\"row\">\n                <img src=\"../img/spin.svg\">\n              </div>  \n            "
-        }), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], UtilComponent);
     return UtilComponent;
 }());
+UtilComponent = __decorate([
+    core_1.Component({
+        selector: 'my-util',
+        template: "<h3 class=\"header\">Utilities</h3>\n               <div class=\"row\">\n                 <button class=\"btn btn-success\" (click)=\"import()\">Run Import</button>\n                 <button class=\"btn btn-info\" (click)=\"viewlogs()\">View Import Logs</button>\n                 <button class=\"btn btn-primary\" (click)=\"viewdata()\">View Import Data</button>\n               </div>\n               <div style=\"margin-top:15px\"></div>\n\n               <div *ngIf=\"showdropdown\" class=\"row\">\n                 <dropdown [values]=\"dropdownValues\" (select)=\"action($event)\"></dropdown>\n               </div> \n               \n               <div style=\"margin-top:15px\"></div>\n               <div *ngIf=\"loadres\" class=\"panel panel-default\">\n                <div *ngIf=\"loadres\" class=\"panel-heading\">\n                  <h3 class=\"panel-title\">{{loadres.loadId}}</h3>\n                </div>\n                <ul class=\"list-group\" *ngIf=\"loadres\">\n                  <li class=\"list-group-item\">\n                    <h4 class=\"list-group-item-heading\">Stocks Processed</h4>\n                    <p class=\"list-group-item-text\">{{loadres.stocksProcessed}}</p>\n                  </li>\n                  <li class=\"list-group-item\">\n                    <h4 class=\"list-group-item-heading\">Stocks Loaded</h4>\n                    <p class=\"list-group-item-text\">{{loadres.stocksLoaded}}</p>\n                  </li>\n                  <li class=\"list-group-item\">\n                    <h4 class=\"list-group-item-heading\">Stocks Failed</h4>\n                    <p class=\"list-group-item-text\">{{loadres.stocksFailed}}</p>\n                  </li>\n                  <li class=\"list-group-item\">\n                    <h4 class=\"list-group-item-heading\">Stock Errors</h4>\n                    <p class=\"list-group-item-text\">{{loadres.stocksErrors}}</p>\n                  </li>      \n                  <li class=\"list-group-item\">\n                    <h4 class=\"list-group-item-heading\">Stock Duration</h4>\n                    <p class=\"list-group-item-text\">{{loadres.loadDuration}}</p>\n                  </li>                        \n              </ul>\n              </div>            \n              <div *ngIf=\"loadingGIF\" class=\"row\">\n                <img src=\"../img/spin.svg\">\n              </div>  \n            "
+    }),
+    __metadata("design:paramtypes", [http_1.Http])
+], UtilComponent);
 exports.UtilComponent = UtilComponent;
 //# sourceMappingURL=util.component.js.map

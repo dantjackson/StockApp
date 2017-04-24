@@ -8,18 +8,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
 var DashboardComponent = (function () {
     function DashboardComponent() {
+        this.pie_ChartData = [
+            ['Task', 'Hours per Day'],
+            ['Work', 11],
+            ['Eat', 2],
+            ['Commute', 2],
+            ['Watch TV', 2],
+            ['Sleep', 7]
+        ];
+        this.pie_ChartOptions = {
+            title: 'My Daily Activities',
+            width: 900,
+            height: 500
+        };
     }
-    DashboardComponent = __decorate([
-        core_1.Component({
-            selector: 'my-dashboard',
-            template: '<h3>My Dashboard</h3>'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], DashboardComponent);
+    DashboardComponent.prototype.ngOnInit = function () {
+    };
     return DashboardComponent;
 }());
+DashboardComponent = __decorate([
+    core_1.Component({
+        selector: 'my-dashboard',
+        templateUrl: 'app/dashboard.component.html',
+        styleUrls: [''],
+    }),
+    __metadata("design:paramtypes", [])
+], DashboardComponent);
 exports.DashboardComponent = DashboardComponent;
 //# sourceMappingURL=dashboard.component.js.map

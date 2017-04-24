@@ -28,13 +28,17 @@ import { PagerService } from './_services/index';
 import { PrivateComponent }     from './auth.private.component'
 import { LoginComponent }       from './auth.component'
 
+import {GoogleChartComponent} from './GoogleChartComponent'
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot()
   ],
   declarations: [
     AppComponent,
@@ -45,7 +49,8 @@ import { LoginComponent }       from './auth.component'
     StockListComponent,
     StockDetailComponent,
     SearchBox,SearchName,SearchPipe,
-    UtilComponent, DropdownComponent
+    UtilComponent, DropdownComponent,
+    GoogleChartComponent
   ],
   providers: [ StockListService, PagerService, PortFolioService ],
   bootstrap: [ AppComponent]

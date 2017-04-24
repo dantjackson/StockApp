@@ -16,11 +16,20 @@ export  class AddStock {
 }
 
 @Injectable()
+export class Perf {
+  stockDate: string;
+  stockBid: string;
+  stockId: string;
+}
+
+@Injectable()
 export class PortFolioService {
 
   private headers = new Headers({'Content-Type': 'application/json'});
   private stockUrl = 'http://localhost:8080/Stocker/stocker/stocks/folio/1';  // URL to web api
   private postAddStockUri: string = "http://localhost:8080/Stocker/stocker/stocks/folio/addstock";
+  private stockPerfUrl = 'http://localhost:8080/Stocker/stocker/stocks/folio/perfbytime/12';  // URL to web api
+
 
   constructor(private http: Http) { }
 
@@ -29,6 +38,12 @@ export class PortFolioService {
                     .catch(this.handleError)
                     .map(this.extractData);
   }
+
+  getFolioPerf(arg): Observable<Perf[]> { 
+    return this.http.get(this.stockPerfUrl + arg)
+                    .catch(this.handleError)
+                    .map(this.extractData);
+  }  
 
   private extractData(res: Response) {
       let body = res.json();

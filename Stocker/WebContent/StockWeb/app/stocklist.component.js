@@ -8,10 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var stocklist_service_1 = require('./stocklist.service');
-var http_1 = require('@angular/http');
-var index_1 = require('./_services/index');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var stocklist_service_1 = require("./stocklist.service");
+var http_1 = require("@angular/http");
+var index_1 = require("./_services/index");
 var StockListComponent = (function () {
     function StockListComponent(stockListService, http, pagerService) {
         this.stockListService = stockListService;
@@ -61,20 +62,22 @@ var StockListComponent = (function () {
         // get current page of items
         this.pagedItems = this.stocks.slice(this.pager.startIndex, this.pager.endIndex + 1);
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], StockListComponent.prototype, "term", void 0);
-    StockListComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'my-stocks',
-            templateUrl: 'stocklist.component.html',
-            styleUrls: ['stocklist.component.css']
-        }), 
-        __metadata('design:paramtypes', [stocklist_service_1.StockListService, http_1.Http, index_1.PagerService])
-    ], StockListComponent);
     return StockListComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], StockListComponent.prototype, "term", void 0);
+StockListComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'my-stocks',
+        templateUrl: 'stocklist.component.html',
+        styleUrls: ['stocklist.component.css']
+    }),
+    __metadata("design:paramtypes", [stocklist_service_1.StockListService,
+        http_1.Http,
+        index_1.PagerService])
+], StockListComponent);
 exports.StockListComponent = StockListComponent;
 //# sourceMappingURL=stocklist.component.js.map
