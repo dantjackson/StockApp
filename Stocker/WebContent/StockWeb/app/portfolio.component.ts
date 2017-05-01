@@ -118,10 +118,7 @@ declare var googleLoaded:any;
         </table>   
    </div>     
 
-   <div id="line_chart" [chartData]="line_ChartData" [chartOptions]= "line_ChartOptions" chartType="LineChart" GoogleChart></div>
    <div id="line_chart" [chartData]="arr" [chartOptions]= "line_ChartOptions" chartType="LineChart" GoogleChart></div>
-
-
 `
 })
 
@@ -180,23 +177,33 @@ export class PortfolioComponent implements OnInit{
      for (let i of jsonAsArray) {
        var danvar = Object.values(i);
        iter = 0;
-       for (let z of danvar) {
+       for (let dateStrIter of danvar) {
          iter ++;
-         if (distDatesArr.indexOf(z.toString()) == -1 && iter==1) {
-          //distDatesArr.push(z.toString());
-          var dateStrDay = +z.toString().substring(1,2);
-          var dateStrMonth = +z.toString().substring(3,5);
-          var dateStrYear = +z.toString().substring(6,8) + 2000;
-          console.log(dateStrDay); 
-          console.log(dateStrMonth); 
-          console.log(dateStrYear); 
+         var dateStrDay = +dateStrIter.toString().substring(0,2);
+         var dateStrMonth = +dateStrIter.toString().substring(3,5) - 1;
+         var dateStrYear = +dateStrIter.toString().substring(6,8) + 2000;
+         var dateVar = new Date(dateStrYear, dateStrMonth, dateStrDay);
 
-          var dateVar = new Date(dateStrYear, dateStrMonth, dateStrDay);
-          console.log(dateStrYear.toString()); 
+         // Cannot compare date objects so use this map approach. 
+         var idx = distDatesArr.map(Number).indexOf(+dateVar); 
+
+         if (idx == -1 && iter==1) {
           distDatesArr.push(dateVar);
          }
        }  
      }  
+
+    var date_sort_asc = function (date1, date2) {
+      // This is a comparison function that will result in dates being sorted in
+      // ASCENDING order. As you can see, JavaScript's native comparison operators
+      // can be used to compare dates. This was news to me.
+      if (date1 > date2) return 1;
+      if (date1 < date2) return -1;
+      return 0;
+    };
+    // Sort Dates Array 
+    distDatesArr = distDatesArr.sort(date_sort_asc); 
+
      console.log(distDatesArr);
 
      // Get list of stocks and add each plus date to title array.
@@ -226,15 +233,20 @@ export class PortfolioComponent implements OnInit{
             for (let topArrayObj of jsonAsArray) {
               var topArr = Object.values(topArrayObj);
 
-              if (topArr[0].toString()==dateIter.toString() && topArr[2].toString()==titleIter.toString()  ) {
+              var dateAsFormattedStr = this.getDay(dateIter) + '-' + this.getMonth(dateIter) +  '-' + dateIter.getFullYear().toString().substr(2,4);
+              //console.log('DATE'+dateIter); 
+              //console.log('DATEFORM'+dateAsFormattedStr); 
+              //console.log('DATEINARRAY'+topArr[0].toString()); 
+
+               if (topArr[0].toString()==dateAsFormattedStr && topArr[2].toString()==titleIter.toString()  ) {
                  rowArrayVar.push(topArr[1]);  
                  subinZeroVal = false;
-                 console.log("Here");
+                 //console.log("Here");
               } 
             }  
        // Sub in a row if no match
        if (subinZeroVal==true  && titleIter!="Date") {
-          rowArrayVar.push(0);   
+          rowArrayVar.push(null);   
        } 
 
        } // for   
@@ -242,10 +254,23 @@ export class PortfolioComponent implements OnInit{
      }
      
    console.log(endArrayVar);  
+   //this.arr = endArrayVar.sort((n1,n2) =>  {
+   //     return n1 - n2
+   // } );
    //this.arr = new google.visualization.DataTable(this.out);
    this.arr = endArrayVar;
 
    }
+
+ getMonth(date) {
+  var month = date.getMonth() + 1;
+  return month < 10 ? '0' + month : '' + month; // ('' + month) for string result
+}  
+
+ getDay(date) {
+  var day = date.getDate();
+  return day < 10 ? '0' + day : '' + day; 
+  }  
 
     validateStockPostLoad() {
       
@@ -269,34 +294,15 @@ export class PortfolioComponent implements OnInit{
     console.log(this.portfolios);  
     this.getFolioPerf("");
     console.log(this.perf);      
-    
   }
 
-  public pie_ChartData = [
-    ['Task', 'Hours per Day'],
-    ['Work', 11],
-    ['Eat', 2],
-    ['Commute', 2],
-    ['Watch TV', 2],
-    ['Sleep', 7]];
-
-    public line_ChartData = [
-      ['Date', 'Barc', 'India', 'Thai'],
-        ["04-11-17",24,33,439.75],
-        ["04-11-18",22,33,439.75]];
-
-    public line_ChartOptions = {
-        title: 'Company Performance',
+  public line_ChartOptions = {
+        title: 'Portfolio Performance',
         curveType: 'function',
         legend: {
             position: 'bottom'
         }
-    };
-
-  public pie_ChartOptions  = {
-    title: 'My Daily Activities',
-    width: 900,
-    height: 500
   };
+
 
 }

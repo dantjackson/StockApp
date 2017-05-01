@@ -4,8 +4,11 @@ package com.stocker.rest;
 import java.sql.*;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+
 import com.stocker.rest.SqlMySQLConn;
 import com.stocker.rest.DataClasses.AddStock;
 import com.stocker.rest.DataClasses.FolioStock;
@@ -149,16 +152,86 @@ public class FolioLoad {
 
 		ArrayList<StockByTime> list = new ArrayList<StockByTime>();
 		Connection c = null;
+		// Normalise Variables
+		String currStock = "", prevStock = "", currDate = "";
+		Double minBidVal=1000000.0, maxBidVal=0.0, curBidVal=0.0, prevBidVal = 0.0;
+		Boolean normalise = true;
+		int rowCount = 0;
+		Map stockHighLowMap = new HashMap();
 		
 		String sql = "CALL hokus.getFolioStocksByTime(1)";
 		
-		System.out.println(sql);
 		try {
 			c = SqlMySQLConn.getConnection();
 			Statement s = c.createStatement();
 			ResultSet rs = s.executeQuery(sql);
-			while (rs.next()) {
-				list.add(processFolioPerfByTime(rs));
+			
+			// Normalise Option
+			if (normalise) {
+				while (rs.next()) {
+					// Get High and Low Per Stock
+					++rowCount;
+					currStock = rs.getString("stock_id");
+					curBidVal = rs.getDouble("stock_bid");
+					if (prevStock.equals("")) {
+						prevStock = currStock; 
+					}
+					
+					if (currStock.equals(prevStock)) {  // Same stock new date
+						if (curBidVal < minBidVal ) {
+							minBidVal = curBidVal;
+						}
+						if (curBidVal > maxBidVal ) {
+							maxBidVal = curBidVal;
+						}						
+					}
+					else {  // New Stock
+						// Save old stock info in Map
+						// insert prevStock, minBidVal, maxBidVal
+						stockHighLowMap.put(prevStock+"-Max",maxBidVal);
+						stockHighLowMap.put(prevStock+"-Min",minBidVal);
+						
+						minBidVal = curBidVal;
+						maxBidVal = curBidVal;
+					}
+					prevStock = currStock;
+				}
+				
+				if (rowCount>1) {
+				  stockHighLowMap.put(prevStock+"-Max",maxBidVal);
+				  stockHighLowMap.put(prevStock+"-Min",minBidVal);
+				}
+				
+				System.out.println(stockHighLowMap);
+				rs.beforeFirst();
+				
+				while (rs.next()) {
+					// Update bid values based on normalisation call.
+					currStock = rs.getString("stock_id");
+					prevBidVal = rs.getDouble("stock_bid");	
+					currDate = rs.getString("f_stock_date");	
+					//map = processFolioPerfByTime(rs));
+					minBidVal = (Double) stockHighLowMap.get(currStock+"-Min");
+					maxBidVal = (Double) stockHighLowMap.get(currStock+"-Max");		
+					System.out.println("STOCK"+ currStock + "-"+prevBidVal+"-"+minBidVal+"-"+maxBidVal);
+					curBidVal = normalise(prevBidVal, minBidVal, maxBidVal);
+					System.out.println("LIST2");
+					
+					StockByTime dataresults = new StockByTime();
+					dataresults.setStockId(currStock);
+					dataresults.setStockBid(curBidVal);
+					dataresults.setStockDate(currDate);
+					list.add(dataresults);
+				}	
+				System.out.println("LIST");
+				System.out.println(list);
+			} // normalised processing
+			
+			if (!normalise) {
+				rs.beforeFirst();
+				while (rs.next()) {
+					list.add(processFolioPerfByTime(rs));
+				}
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -175,8 +248,16 @@ public class FolioLoad {
 		StockByTime dataresults = new StockByTime();
 		dataresults.setStockId(rs.getString("stock_id"));
 		dataresults.setStockBid(rs.getDouble("stock_bid"));
-		dataresults.setStockDate(rs.getString("stock_date"));
+		dataresults.setStockDate(rs.getString("f_stock_date"));
 		return dataresults;
+	
+	}
+	
+	public static double normalise(double inValue, double min, double max) {
+      if (min==max) {
+    	  return 0;
+      }
+      return (inValue - min)/(max - min);
 	}
 	
 	
